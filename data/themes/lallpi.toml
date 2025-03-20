@@ -1,0 +1,33 @@
+# Theme metadata
+name = "lallpi"
+
+#$C0: #F07F09; // orange
+#$C1: #9F2936; // red
+#$C2: #1B587C; // blue
+#$C3: #4E8542; // green
+#$C4: #604878; // pruple
+#$C5: #C19859; // brown
+
+[light]
+  # Primary
+  #primary = "rgba(4, 30, 66, 0.75)" # UTEP Blue
+  primary = " #F07F09" # UTEP Blue
+
+  # Menu
+  menu_primary = " #FFFFFF" # UTEP Blue
+  menu_text = " #F07F09"
+  menu_text_active = " #9F2936"
+  menu_title = " #F07F09"
+
+  # Home sections
+  home_section_odd = "rgb(255, 255, 255)"
+  home_section_even = "rgb(247, 247, 247)"
+
+[dark]
+  # Primary
+  primary = "#bbdefb"
+
+  link = "#bbdefb"
+  link_hover = "#bbdefb"
+
+

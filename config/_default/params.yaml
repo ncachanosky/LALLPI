@@ -3,11 +3,14 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
+i_am_a_sponsor: 'true'
+
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night:
+  theme_day: lallpi
+  #thene: lallpi
+  theme_night: lallpi
   font: native
   font_size: L
 
@@ -39,18 +42,18 @@ header:
     show_language: false
     show_day_night: true
     show_search: true
-    highlight_active_link: false
+    highlight_active_link: true
 
 # Site footer
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} João P. Bastos, Nicolas Cachanosky, and Alexandre Padilla.'
     license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+#      enable: false
+#      allow_derivatives: false
+#      share_alike: true
+#      allow_commercial: false
 
 # Localization
 
@@ -68,11 +71,11 @@ features:
       - r
       - latex
   math:
-    enable: false
+    enable: true
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/ncachanosky/populism-index'
     content_dir: content
     branch: main
   avatar:

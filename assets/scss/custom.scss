@@ -1,0 +1,56 @@
+// COLOR PALETTE: ASPECT
+$C0: #F07F09; // orange
+$C1: #9F2936; // red
+$C2: #1B587C; // blue
+$C3: #4E8542; // green
+$C4: #604878; // pruple
+$C5: #C19859; // brown
+
+
+// NAVIGATION
+.topnav a.active {
+    color: $C1;
+    font-weight: bold;
+}
+
+nav a {
+    color:$C1;
+}
+
+// HEADERS
+h1 {
+    color: $C0;
+}
+
+h2 {
+    color: $C1;
+}
+
+// LINKS
+a:hover {
+    color: $C1; //  text-decoration: underline;
+}
+
+// FANCY BUTTON
+.fancy-button-blue {
+    border: 1px solid $C0;
+    border-radius: 0.2rem;
+    color: $C0;
+    padding: 5px .4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 0.9;
+}
+
+.fancy-button-blue:hover {
+    color: white;
+    background-color: $C1;
+}
+
+.alert-dark {
+    color: black;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+}

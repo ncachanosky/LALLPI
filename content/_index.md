@@ -5,17 +5,25 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: hero
+  - block: markdown
     content:
-      title: |
-        Wowchemy
-        Research Group
-      image:
-        filename: welcome.jpg
+      title: 
       text: |
-        <br>
-        
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        <div style="text-align: center; font-size: 30px">
+            The <b>Latin American Left-Leaning Populism Index</b> (LALLPI) is a measure of active populist regimes in Latin America
+        </div>
+    
+  - block: markdown
+    content:
+      title: 
+      text: |
+        <div style="text-align: center; font-size: 30px">
+            Coming soon!
+        </div>
+    design:
+      background:
+        color: darkorange
+        text_color_light: true
   
   - block: collection
     content:
@@ -35,26 +43,6 @@ sections:
     design:
       view: card
       columns: '1'
-  
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
 
   - block: collection
     content:
@@ -70,11 +58,12 @@ sections:
       columns: '1'
 
   - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
     design:
-      columns: '1'
+      background:
+        image:
+          # Add your image background to `assets/media/`.
+          filename: C4FE.png
+          size: 20%
+          position: center
+          parallax: false
 ---
