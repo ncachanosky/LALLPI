@@ -150,7 +150,3 @@ Looking at a time series for the region, the data shows an upward trend in the e
 <img src="TS_Regional_PIP.png" alt="TS Regional PIP" width="600"/>
 <figcaption>Figure 6. Institutional Populism, Latin America regions, 2002-2019</figcaption>
 </figure>
-
----
-
-![C4FE](assets/media/C4FE.png)

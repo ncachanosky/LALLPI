@@ -17,7 +17,7 @@ name = "lallpi"
   menu_primary = " #FFFFFF" # UTEP Blue
   menu_text = " #F07F09"
   menu_text_active = " #9F2936"
-  menu_title = " #F07F09"
+  menu_title = " #000000"
 
   # Home sections
   home_section_odd = "rgb(255, 255, 255)"
