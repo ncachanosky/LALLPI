@@ -49,6 +49,7 @@ header:
 footer:
   copyright:
     notice: '© {year} João P. Bastos, Nicolas Cachanosky, and Alexandre Padilla.'
+    notice: 
     license:
 #      enable: false
 #      allow_derivatives: false

@@ -46,3 +46,5 @@ Please replace the demo images with your own.
 - Avatars
   - https://unsplash.com/photos/5yENNRbbat4
   - https://unsplash.com/photos/WNoLnJo7tS8
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d33de10a-e782-42cd-aed7-183352a2ac72/deploy-status)](https://app.netlify.com/sites/lallpi/deploys)
