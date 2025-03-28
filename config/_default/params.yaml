@@ -18,11 +18,11 @@ appearance:
 
 marketing:
   seo:
-    site_type: Organization
+    site_type: Project
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    description: 'An index of Latin American Left-Leaning active populism.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''

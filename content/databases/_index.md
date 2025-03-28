@@ -17,14 +17,7 @@ type: pages
 
 ### Missing observations
 
-The `x` mark denotes an observation. A common reason for missing observations is no `POP_R` data for "independent" president who are not affiliated to a political party with V-Party data.
+The `x` mark denotes an observation. A common reason for missing observations is no `POP_R` data for "independent" presidents who are not affiliated to a political party with V-Party data.
 
 {{< table path="missing_2025.csv" header="true" >}}
-
-
-
-
-
-<!---
-
 
