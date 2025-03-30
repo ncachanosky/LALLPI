@@ -4,6 +4,7 @@ date: 2025-02-12
 authors:
   - admin
   - Bastos
+  - Padilla
 ---
 
 The first version of the **Latin America Left-Leaning Populism Index** is finally out. The 2025 version covers 21 latin american countries with data between 2000 and 2019.

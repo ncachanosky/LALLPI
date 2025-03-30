@@ -199,7 +199,7 @@ sections:
                 <td><div class="country"><img src="https://flagcdn.com/w40/do.png">Dominican Republic</div></td>
                 <td>6.5 (15)</td>
                 <td>3.6 (18)</td>
-                <td>9.32 (10)</td>
+                <td>9.3 (10)</td>
                 <td>0.13</td>
             </tr>
             <tr>
