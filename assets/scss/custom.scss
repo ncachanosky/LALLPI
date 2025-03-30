@@ -58,3 +58,15 @@ a:hover {
     background-color: #d6d8d9;
     border-color: #c6c8ca;
 }
+
+
+// TABLE
+thead tr {
+    background-color: $C1;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}

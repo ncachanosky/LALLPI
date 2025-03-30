@@ -5,6 +5,7 @@ type: pages
 
 ## 2025 Version
 
+* **Publication date:** month, 2025  
 * Countries covered: 21
 * Years covered: 2002-2019  
 
