@@ -7,8 +7,8 @@ authors:
   - Padilla
 ---
 
-The first version of the **Latin America Left-Leaning Populism Index** is finally out. The 2025 version covers 21 latin american countries with data between 2000 and 2019.
+The first edition of the L**atin American Left-Leaning Populism Index** (LALLPI) is finally here! The 2025 version covers 21 Latin American countries with data spanning from 2000 to 2019.
 
-Different to other indices, the index looks at **active** populism, that is how much of the populist *rhetoric* becomes *policy*.
+Unlike other indices, this one focuses on **active** populism—measuring how much populist rhetoric translates into actual policy.
 
-A detailed discussion of the method can be found on this website's [documentation](/documentation) and in this working paper.
+A detailed discussion of the methodology can be found in this website’s [documentation](/documentation) and in this working paper.
