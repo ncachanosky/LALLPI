@@ -1,0 +1,441 @@
+﻿COUNTRY,YEAR,POP,PIP,PEP,POP_R
+Argentina,2000,X,X,X,X
+Barbados,2000,X,X,X,X
+Bolivia,2000,X,X,X,X
+Brazil,2000,X,X,X,X
+Chile,2000,X,X,X,X
+Colombia,2000,X,X,X,X
+Costa Rica,2000,X,X,X,X
+Dominican Republic,2000,X,X,X,X
+Ecuador,2000,,,,
+El Salvador,2000,X,X,X,X
+Guatemala,2000,X,X,X,X
+Haiti,2000,X,X,X,X
+Honduras,2000,X,X,X,X
+Jamaica,2000,X,X,X,X
+Mexico,2000,X,X,X,X
+Nicaragua,2000,,,,
+Panama,2000,X,X,X,X
+Paraguay,2000,X,X,X,X
+Peru,2000,X,X,X,X
+Trinidad y Tobago,2000,X,X,X,X
+Uruguay,2000,X,X,X,X
+Venezuela,2000,X,X,X,X
+Argentina,2001,X,X,X,X
+Barbados,2001,X,X,X,X
+Bolivia,2001,X,X,X,X
+Brazil,2001,X,X,X,X
+Chile,2001,X,X,X,X
+Colombia,2001,X,X,X,X
+Costa Rica,2001,X,X,X,X
+Dominican Republic,2001,X,X,X,X
+Ecuador,2001,,,,
+El Salvador,2001,X,X,X,X
+Guatemala,2001,X,X,X,X
+Haiti,2001,X,X,X,X
+Honduras,2001,X,X,X,X
+Jamaica,2001,X,X,X,X
+Mexico,2001,X,X,X,X
+Nicaragua,2001,X,X,X,X
+Panama,2001,X,X,X,X
+Paraguay,2001,X,X,X,X
+Peru,2001,,,,
+Trinidad y Tobago,2001,X,X,X,X
+Uruguay,2001,X,X,X,X
+Venezuela,2001,X,X,X,X
+Argentina,2002,X,X,X,X
+Barbados,2002,X,X,X,X
+Bolivia,2002,X,X,X,X
+Brazil,2002,X,X,X,X
+Chile,2002,X,X,X,X
+Colombia,2002,X,X,X,X
+Costa Rica,2002,X,X,X,X
+Dominican Republic,2002,X,X,X,X
+Ecuador,2002,,,,
+El Salvador,2002,X,X,X,X
+Guatemala,2002,X,X,X,X
+Haiti,2002,X,X,X,X
+Honduras,2002,X,X,X,X
+Jamaica,2002,X,X,X,X
+Mexico,2002,X,X,X,X
+Nicaragua,2002,X,X,X,X
+Panama,2002,X,X,X,X
+Paraguay,2002,X,X,X,X
+Peru,2002,X,X,X,X
+Trinidad y Tobago,2002,X,X,X,X
+Uruguay,2002,X,X,X,X
+Venezuela,2002,X,X,X,X
+Argentina,2003,X,X,X,X
+Barbados,2003,X,X,X,X
+Bolivia,2003,X,X,X,X
+Brazil,2003,X,X,X,X
+Chile,2003,X,X,X,X
+Colombia,2003,,,,
+Costa Rica,2003,X,X,X,X
+Dominican Republic,2003,X,X,X,X
+Ecuador,2003,X,X,X,X
+El Salvador,2003,X,X,X,X
+Guatemala,2003,X,X,X,X
+Haiti,2003,X,X,X,X
+Honduras,2003,X,X,X,X
+Jamaica,2003,X,X,X,X
+Mexico,2003,X,X,X,X
+Nicaragua,2003,X,X,X,X
+Panama,2003,X,X,X,X
+Paraguay,2003,X,X,X,X
+Peru,2003,X,X,X,X
+Trinidad y Tobago,2003,X,X,X,X
+Uruguay,2003,X,X,X,X
+Venezuela,2003,X,X,X,X
+Argentina,2004,X,X,X,X
+Barbados,2004,X,X,X,X
+Bolivia,2004,,,,
+Brazil,2004,X,X,X,X
+Chile,2004,X,X,X,X
+Colombia,2004,,,,
+Costa Rica,2004,X,X,X,X
+Dominican Republic,2004,X,X,X,X
+Ecuador,2004,X,X,X,X
+El Salvador,2004,X,X,X,X
+Guatemala,2004,X,X,X,X
+Haiti,2004,X,X,X,X
+Honduras,2004,X,X,X,X
+Jamaica,2004,X,X,X,X
+Mexico,2004,X,X,X,X
+Nicaragua,2004,X,X,X,X
+Panama,2004,X,X,X,X
+Paraguay,2004,X,X,X,X
+Peru,2004,X,X,X,X
+Trinidad y Tobago,2004,X,X,X,X
+Uruguay,2004,X,X,X,X
+Venezuela,2004,X,X,X,X
+Argentina,2005,X,X,X,X
+Barbados,2005,X,X,X,X
+Bolivia,2005,,,,
+Brazil,2005,X,X,X,X
+Chile,2005,X,X,X,X
+Colombia,2005,,,,
+Costa Rica,2005,X,X,X,X
+Dominican Republic,2005,X,X,X,X
+Ecuador,2005,,,,
+El Salvador,2005,X,X,X,X
+Guatemala,2005,X,X,X,X
+Haiti,2005,,,X,X
+Honduras,2005,X,X,X,X
+Jamaica,2005,X,X,X,X
+Mexico,2005,X,X,X,X
+Nicaragua,2005,X,X,X,X
+Panama,2005,X,X,X,X
+Paraguay,2005,X,X,X,X
+Peru,2005,X,X,X,X
+Trinidad y Tobago,2005,X,X,X,X
+Uruguay,2005,X,X,X,X
+Venezuela,2005,X,X,X,X
+Argentina,2006,X,X,X,X
+Barbados,2006,X,X,X,X
+Bolivia,2006,X,X,X,X
+Brazil,2006,X,X,X,X
+Chile,2006,X,X,X,X
+Colombia,2006,,,,
+Costa Rica,2006,X,X,X,X
+Dominican Republic,2006,X,X,X,X
+Ecuador,2006,,,,
+El Salvador,2006,X,X,X,X
+Guatemala,2006,X,X,X,X
+Haiti,2006,X,X,X,X
+Honduras,2006,X,X,X,X
+Jamaica,2006,X,X,X,X
+Mexico,2006,X,X,X,X
+Nicaragua,2006,X,X,X,X
+Panama,2006,X,X,X,X
+Paraguay,2006,X,X,X,X
+Peru,2006,X,X,X,X
+Trinidad y Tobago,2006,X,X,X,X
+Uruguay,2006,X,X,X,X
+Venezuela,2006,X,X,X,X
+Argentina,2007,X,X,X,X
+Barbados,2007,X,X,X,X
+Bolivia,2007,X,X,X,X
+Brazil,2007,X,X,X,X
+Chile,2007,X,X,X,X
+Colombia,2007,,,,
+Costa Rica,2007,X,X,X,X
+Dominican Republic,2007,X,X,X,X
+Ecuador,2007,X,X,X,X
+El Salvador,2007,X,X,X,X
+Guatemala,2007,X,X,X,X
+Haiti,2007,X,X,X,X
+Honduras,2007,X,X,X,X
+Jamaica,2007,X,X,X,X
+Mexico,2007,X,X,X,X
+Nicaragua,2007,X,X,X,X
+Panama,2007,X,X,X,X
+Paraguay,2007,X,X,X,X
+Peru,2007,X,X,X,X
+Trinidad y Tobago,2007,X,X,X,X
+Uruguay,2007,X,X,X,X
+Venezuela,2007,X,X,X,X
+Argentina,2008,X,X,X,X
+Barbados,2008,X,X,X,X
+Bolivia,2008,X,X,X,X
+Brazil,2008,X,X,X,X
+Chile,2008,X,X,X,X
+Colombia,2008,,,,
+Costa Rica,2008,X,X,X,X
+Dominican Republic,2008,X,X,X,X
+Ecuador,2008,X,X,X,X
+El Salvador,2008,X,X,X,X
+Guatemala,2008,X,X,X,X
+Haiti,2008,X,X,X,X
+Honduras,2008,X,X,X,X
+Jamaica,2008,X,X,X,X
+Mexico,2008,X,X,X,X
+Nicaragua,2008,X,X,X,X
+Panama,2008,X,X,X,X
+Paraguay,2008,X,X,X,X
+Peru,2008,X,X,X,X
+Trinidad y Tobago,2008,X,X,X,X
+Uruguay,2008,X,X,X,X
+Venezuela,2008,X,X,X,X
+Argentina,2009,X,X,X,X
+Barbados,2009,X,X,X,X
+Bolivia,2009,X,X,X,X
+Brazil,2009,X,X,X,X
+Chile,2009,X,X,X,X
+Colombia,2009,,,,
+Costa Rica,2009,X,X,X,X
+Dominican Republic,2009,X,X,X,X
+Ecuador,2009,X,X,X,X
+El Salvador,2009,X,X,X,X
+Guatemala,2009,X,X,X,X
+Haiti,2009,X,X,X,X
+Honduras,2009,X,X,X,X
+Jamaica,2009,X,X,X,X
+Mexico,2009,X,X,X,X
+Nicaragua,2009,X,X,X,X
+Panama,2009,X,X,X,X
+Paraguay,2009,,,,
+Peru,2009,X,X,X,X
+Trinidad y Tobago,2009,X,X,X,X
+Uruguay,2009,X,X,X,X
+Venezuela,2009,X,X,X,X
+Argentina,2010,X,X,X,X
+Barbados,2010,X,X,X,X
+Bolivia,2010,X,X,X,X
+Brazil,2010,X,X,X,X
+Chile,2010,X,X,X,X
+Colombia,2010,,,,
+Costa Rica,2010,X,X,X,X
+Dominican Republic,2010,X,X,X,X
+Ecuador,2010,X,X,X,X
+El Salvador,2010,X,X,X,X
+Guatemala,2010,X,X,X,X
+Haiti,2010,X,X,X,X
+Honduras,2010,X,X,X,X
+Jamaica,2010,X,X,X,X
+Mexico,2010,X,X,X,X
+Nicaragua,2010,X,X,X,X
+Panama,2010,X,X,X,X
+Paraguay,2010,,,,
+Peru,2010,X,X,X,X
+Trinidad y Tobago,2010,X,X,X,X
+Uruguay,2010,X,X,X,X
+Venezuela,2010,X,X,X,X
+Argentina,2011,X,X,X,X
+Barbados,2011,X,X,X,X
+Bolivia,2011,X,X,X,X
+Brazil,2011,X,X,X,X
+Chile,2011,X,X,X,X
+Colombia,2011,X,X,X,X
+Costa Rica,2011,X,X,X,X
+Dominican Republic,2011,X,X,X,X
+Ecuador,2011,X,X,X,X
+El Salvador,2011,X,X,X,X
+Guatemala,2011,X,X,X,X
+Haiti,2011,X,X,X,X
+Honduras,2011,X,X,X,X
+Jamaica,2011,X,X,X,X
+Mexico,2011,X,X,X,X
+Nicaragua,2011,X,X,X,X
+Panama,2011,X,X,X,X
+Paraguay,2011,,,,
+Peru,2011,X,X,X,X
+Trinidad y Tobago,2011,X,X,X,X
+Uruguay,2011,X,X,X,X
+Venezuela,2011,X,X,X,X
+Argentina,2012,X,X,X,X
+Barbados,2012,X,X,X,X
+Bolivia,2012,X,X,X,X
+Brazil,2012,X,X,X,X
+Chile,2012,X,X,X,X
+Colombia,2012,X,X,X,X
+Costa Rica,2012,X,X,X,X
+Dominican Republic,2012,X,X,X,X
+Ecuador,2012,X,X,X,X
+El Salvador,2012,X,X,X,X
+Guatemala,2012,X,X,X,X
+Haiti,2012,X,X,X,X
+Honduras,2012,X,X,X,X
+Jamaica,2012,X,X,X,X
+Mexico,2012,X,X,X,X
+Nicaragua,2012,X,X,X,X
+Panama,2012,X,X,X,X
+Paraguay,2012,,,,
+Peru,2012,X,X,X,X
+Trinidad y Tobago,2012,X,X,X,X
+Uruguay,2012,X,X,X,X
+Venezuela,2012,X,X,X,X
+Argentina,2013,X,X,X,X
+Barbados,2013,X,X,X,X
+Bolivia,2013,X,X,X,X
+Brazil,2013,X,X,X,X
+Chile,2013,X,X,X,X
+Colombia,2013,X,X,X,X
+Costa Rica,2013,X,X,X,X
+Dominican Republic,2013,X,X,X,X
+Ecuador,2013,X,X,X,X
+El Salvador,2013,X,X,X,X
+Guatemala,2013,X,X,X,X
+Haiti,2013,X,X,X,X
+Honduras,2013,X,X,X,X
+Jamaica,2013,X,X,X,X
+Mexico,2013,X,X,X,X
+Nicaragua,2013,X,X,X,X
+Panama,2013,X,X,X,X
+Paraguay,2013,X,X,X,X
+Peru,2013,X,X,X,X
+Trinidad y Tobago,2013,X,X,X,X
+Uruguay,2013,X,X,X,X
+Venezuela,2013,X,X,X,X
+Argentina,2014,X,X,X,X
+Barbados,2014,X,X,X,X
+Bolivia,2014,X,X,X,X
+Brazil,2014,X,X,X,X
+Chile,2014,X,X,X,X
+Colombia,2014,X,X,X,X
+Costa Rica,2014,X,X,X,X
+Dominican Republic,2014,X,X,X,X
+Ecuador,2014,X,X,X,X
+El Salvador,2014,X,X,X,X
+Guatemala,2014,X,X,X,X
+Haiti,2014,X,X,X,X
+Honduras,2014,X,X,X,X
+Jamaica,2014,X,X,X,X
+Mexico,2014,X,X,X,X
+Nicaragua,2014,X,X,X,X
+Panama,2014,X,X,X,X
+Paraguay,2014,X,X,X,X
+Peru,2014,X,X,X,X
+Trinidad y Tobago,2014,X,X,X,X
+Uruguay,2014,X,X,X,X
+Venezuela,2014,X,X,X,X
+Argentina,2015,X,X,X,X
+Barbados,2015,X,X,X,X
+Bolivia,2015,X,X,X,X
+Brazil,2015,X,X,X,X
+Chile,2015,X,X,X,X
+Colombia,2015,X,X,X,X
+Costa Rica,2015,X,X,X,X
+Dominican Republic,2015,X,X,X,X
+Ecuador,2015,X,X,X,X
+El Salvador,2015,X,X,X,X
+Guatemala,2015,X,X,X,X
+Haiti,2015,X,X,X,X
+Honduras,2015,X,X,X,X
+Jamaica,2015,X,X,X,X
+Mexico,2015,X,X,X,X
+Nicaragua,2015,X,X,X,X
+Panama,2015,X,X,X,X
+Paraguay,2015,X,X,X,X
+Peru,2015,X,X,X,X
+Trinidad y Tobago,2015,X,X,X,X
+Uruguay,2015,X,X,X,X
+Venezuela,2015,X,X,X,X
+Argentina,2016,X,X,X,X
+Barbados,2016,X,X,X,X
+Bolivia,2016,X,X,X,X
+Brazil,2016,X,X,X,X
+Chile,2016,X,X,X,X
+Colombia,2016,X,X,X,X
+Costa Rica,2016,X,X,X,X
+Dominican Republic,2016,X,X,X,X
+Ecuador,2016,X,X,X,X
+El Salvador,2016,X,X,X,X
+Guatemala,2016,X,X,X,X
+Haiti,2016,,,,
+Honduras,2016,X,X,X,X
+Jamaica,2016,X,X,X,X
+Mexico,2016,X,X,X,X
+Nicaragua,2016,X,X,X,X
+Panama,2016,X,X,X,X
+Paraguay,2016,X,X,X,X
+Peru,2016,X,X,X,X
+Trinidad y Tobago,2016,X,X,X,X
+Uruguay,2016,X,X,X,X
+Venezuela,2016,X,X,X,X
+Argentina,2017,X,X,X,X
+Barbados,2017,X,X,X,X
+Bolivia,2017,X,X,X,X
+Brazil,2017,X,X,X,X
+Chile,2017,X,X,X,X
+Colombia,2017,X,X,X,X
+Costa Rica,2017,X,X,X,X
+Dominican Republic,2017,X,X,X,X
+Ecuador,2017,X,X,X,X
+El Salvador,2017,X,X,X,X
+Guatemala,2017,X,X,X,X
+Haiti,2017,,,,
+Honduras,2017,X,X,X,X
+Jamaica,2017,X,X,X,X
+Mexico,2017,X,X,X,X
+Nicaragua,2017,X,X,X,X
+Panama,2017,X,X,X,X
+Paraguay,2017,X,X,X,X
+Peru,2017,X,X,X,X
+Trinidad y Tobago,2017,X,X,X,X
+Uruguay,2017,X,X,X,X
+Venezuela,2017,X,X,X,X
+Argentina,2018,X,X,X,X
+Barbados,2018,X,X,X,X
+Bolivia,2018,X,X,X,X
+Brazil,2018,X,X,X,X
+Chile,2018,X,X,X,X
+Colombia,2018,X,X,X,X
+Costa Rica,2018,X,X,X,X
+Dominican Republic,2018,X,X,X,X
+Ecuador,2018,X,X,X,X
+El Salvador,2018,X,X,X,X
+Guatemala,2018,X,X,X,X
+Haiti,2018,,,,
+Honduras,2018,X,X,X,X
+Jamaica,2018,X,X,X,X
+Mexico,2018,X,X,X,X
+Nicaragua,2018,X,X,X,X
+Panama,2018,X,X,X,X
+Paraguay,2018,X,X,X,X
+Peru,2018,,,,
+Trinidad y Tobago,2018,X,X,X,X
+Uruguay,2018,X,X,X,X
+Venezuela,2018,X,X,X,X
+Argentina,2019,X,X,X,X
+Barbados,2019,X,X,X,X
+Bolivia,2019,X,X,X,X
+Brazil,2019,,,,
+Chile,2019,X,X,X,X
+Colombia,2019,X,X,X,X
+Costa Rica,2019,X,X,X,X
+Dominican Republic,2019,X,X,X,X
+Ecuador,2019,X,X,X,X
+El Salvador,2019,,,,
+Guatemala,2019,X,X,X,X
+Haiti,2019,,,,
+Honduras,2019,X,X,X,X
+Jamaica,2019,X,X,X,X
+Mexico,2019,X,X,X,X
+Nicaragua,2019,X,X,X,X
+Panama,2019,X,X,X,X
+Paraguay,2019,X,X,X,X
+Peru,2019,,,,
+Trinidad y Tobago,2019,X,X,X,X
+Uruguay,2019,X,X,X,X
+Venezuela,2019,X,X,X,X

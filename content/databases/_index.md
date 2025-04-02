@@ -21,5 +21,5 @@ type: pages
 
 The `x` mark denotes an observation. A common reason for missing observations is no `POP_R` data for "independent" presidents who are not affiliated to a political party with V-Party data.
 
-{{< table path="missing_2025.csv" header="true" >}}
+{{< table path="missing_data_2025.csv" header="true" >}}
 
