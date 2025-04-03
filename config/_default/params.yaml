@@ -40,7 +40,7 @@ header:
     align: r
     show_logo: true
     show_language: false
-    show_day_night: true
+    show_day_night: false
     show_search: true
     highlight_active_link: true
 
@@ -71,6 +71,7 @@ features:
     extra_languages:
       - r
       - latex
+      - python
   math:
     enable: true
   privacy_pack:
