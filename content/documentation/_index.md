@@ -122,29 +122,22 @@ Table 6 illustrates an additional characteristic of the index. Given that populi
 
 The index indicates that populist regimes score higher on the Institutional Populism (*PIP*) sub-index compared to the Economic Populism (*PEP*) sub-index (Figure 2). This disparity may be attributable to the variables contributing to each sub-index. 
 
-<figure>
-<img src="scatter_2018.png" alt="Scatter" width="350"/>
-<figcaption>Figure 2. Scatter, PEP and PIP, 2018</figcaption>
-</figure>
+<div style="min-height:451px" id="datawrapper-vis-BMEyw"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/BMEyw/embed.js" charset="utf-8" data-target="#datawrapper-vis-BMEyw"></script><noscript><img src="https://datawrapper.dwcdn.net/BMEyw/full.png" alt="" /></noscript></div>
+
+---
 
 Looking at a time series for the region, the data shows an upward trend in the early 2000s, peaking between 2009 and 2014.
 
-<figure>
-<img src="TS_Latam_Average.png" alt="TS LatAm Average" width="600"/>
-<figcaption>Figure 3. Latin America aggregates, 2002-2019</figcaption>
-</figure>
+<div style="min-height:449px" id="datawrapper-vis-lalbn"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/lalbn/embed.js" charset="utf-8" data-target="#datawrapper-vis-lalbn"></script><noscript><img src="https://datawrapper.dwcdn.net/lalbn/full.png" alt="" /></noscript></div>
 
-<figure>
-<img src="TS_Regional_POP.png" alt="TS Regional POP" width="600"/>
-<figcaption>Figure 4. Populism Index, Latin America regions, 2002-2019</figcaption>
-</figure>
+---
 
-<figure>
-<img src="TS_Regional_PEP.png" alt="TS Regional POP" width="600"/>
-<figcaption>Figure 5. Economic Populism, Latin America regions, 2002-2019</figcaption>
-</figure>
+<div style="min-height:447px" id="datawrapper-vis-NKWOu"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/NKWOu/embed.js" charset="utf-8" data-target="#datawrapper-vis-NKWOu"></script><noscript><img src="https://datawrapper.dwcdn.net/NKWOu/full.png" alt="" /></noscript></div>
 
-<figure>
-<img src="TS_Regional_PIP.png" alt="TS Regional PIP" width="600"/>
-<figcaption>Figure 6. Institutional Populism, Latin America regions, 2002-2019</figcaption>
-</figure>
+---
+
+<div style="min-height:447px" id="datawrapper-vis-LVly9"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/LVly9/embed.js" charset="utf-8" data-target="#datawrapper-vis-LVly9"></script><noscript><img src="https://datawrapper.dwcdn.net/LVly9/full.png" alt="" /></noscript></div>
+
+---
+
+<div style="min-height:447px" id="datawrapper-vis-ElYd0"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ElYd0/embed.js" charset="utf-8" data-target="#datawrapper-vis-ElYd0"></script><noscript><img src="https://datawrapper.dwcdn.net/ElYd0/full.png" alt="" /></noscript></div>
