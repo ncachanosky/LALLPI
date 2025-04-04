@@ -93,51 +93,35 @@ Sources, variables names, and variable codes for IP are included in Table 4.
 
 Index results are consistent with countries that the literature already identifies as populist regimes (Celico et al., 2024; Funke et al., 2023). Table 6 presents index values and rankings for all countries with data in 2018. The ranking aligns with existing literature. For example, Venezuela, Bolivia, Nicaragua, and Ecuador ranked high in 2018. This year, Argentina ranks lower as Macri’s Cambiemos centrist political coali-tion was governing at the time. El Salvador provides an interesting case where Nayib Bukele is better categorized as a right-leaning rather than left-leaning populist. Ac-cordingly, his *EP* score is low, while his IP is higher. This is consistent with left- and right-leaning populist regimes following different economic policies but being analo-gous on the institutional front. 
 
-|                    | POP      |           | PEP      |           | PIP      |           | POP_R     |           |
-| ------------------ | -------- | --------- | -------- | --------- | -------- | --------- | --------- | --------- |
-| **Country**        | **Rank** | **Value** | **Rank** | **Value** | **Rank** | **Value** | **Rank**  | **Value** |
-| Venezuela          | 1        | 79.8      | 1        | 68.6      | 1        | 91.1      | 1         | 0.99      |
-| Bolivia            | 2        | 45.5      | 3        | 31.6      | 3        | 59.3      | 3         | 0.87      |
-| Nicaragua          | 3        | 40.3      | 4        | 19.6      | 2        | 61.1      | 5         | 0.69      |
-| Ecuador            | 4        | 38.4      | 2        | 34.2      | 4        | 42.7      | 2         | 0.69      |
-| El Savlador        | 5        | 27.5      | 5        | 17.1      | 5        | 37.9      | 4         | 0.72      |
-| Colombia           | 6        | 14.5      | 8        | 14.1      | 6        | 14.8      | 8         | 0.47      |
-| Costa Rica         | 7        | 12.9      | 7        | 14.5      | 8        | 11.2      | 6         | 0.61      |
-| Barbados           | 8        | 11.5      | 9        | 14.1      | 12       | 9.0       | 10        | 0.37      |
-| Uruguay            | 9        | 10.5      | 6        | 14.8      | 18       | 6.2       | 7         | 0.48      |
-| Panama             | 10       | 10.4      | 13       | 7.4       | 7        | 13.4      | 11        | 0.33      |
-| Trinidad y Tobago  | 11       | 9.8       | 10       | 11.0      | 11       | 8.6       | 9         | 0.39      |
-| Brazil             | 12       | 8.1       | 11       | 7.6       | 13       | 8.7       | 13        | 0.22      |
-| Jamaica            | 13       | 7.2       | 12       | 7.4       | 16       | 7.0       | 12        | 0.30      |
-| Guatemala          | 14       | 7.2       | 15       | 4.3       | 9        | 10.0      | 14        | 0.18      |
-| Dominican Republic | 15       | 6.5       | 18       | 3.6       | 10       | 9.5       | 19        | 0.13      |
-| Paraguay           | 16       | 6.2       | 17       | 3.9       | 15       | 8.5       | 17        | 0.15      |
-| Argentina          | 17       | 6.2       | 14       | 6.3       | 19       | 6.1       | 15        | 0.17      |
-| Mexico             | 18       | 5.5       | 16       | 4.0       | 17       | 6.9       | 18        | 0.14      |
-| Honduras           | 19       | 2.6       | 20       | 1.4       | 20       | 3.7       | 20        | 0.06      |
-| Chile              | 20       | 2.4       | 19       | 3.0       | 21       | 1.8       | 16        | 0.15      |
-***Table 6**. Index values and ranking, 2018*
+<div style="margin-bottom: 40px">
+    <div style="min-height:745px" id="datawrapper-vis-6Bu1z"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/6Bu1z/embed.js" charset="utf-8" data-target="#datawrapper-vis-6Bu1z"></script><noscript><img src="https://datawrapper.dwcdn.net/6Bu1z/full.png" alt="" /></noscript></div>
+</div>
 
 Table 6 illustrates an additional characteristic of the index. Given that populist policies are measured on a scale from 0 (indicating less populism) to 100 (indicating more populism) and adjusted by POP_R, which ranges between 0 and 1, the index values for PEP and PIP are expected to be relatively low. This is evident in the signifi-cant gap between the index values for Venezuela and Bolivia, the latter being the next country in the ranking. In section 5, we will provide a more detailed analysis of the five countries with the highest populist values between approximately 2000 and 2018.
 
 The index indicates that populist regimes score higher on the Institutional Populism (*PIP*) sub-index compared to the Economic Populism (*PEP*) sub-index (Figure 2). This disparity may be attributable to the variables contributing to each sub-index. 
 
-<div style="min-height:451px" id="datawrapper-vis-BMEyw"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/BMEyw/embed.js" charset="utf-8" data-target="#datawrapper-vis-BMEyw"></script><noscript><img src="https://datawrapper.dwcdn.net/BMEyw/full.png" alt="" /></noscript></div>
+
+<div align="center">
+    <iframe title="Economic and Institutional Populism" aria-label="Scatter Plot" id="datawrapper-chart-BMEyw" src="https://datawrapper.dwcdn.net/BMEyw/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="494" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+    </script>
+</div>
 
 ---
 
 Looking at a time series for the region, the data shows an upward trend in the early 2000s, peaking between 2009 and 2014.
+<div style="margin-bottom: 40px">
+    <div style="min-height:449px" id="datawrapper-vis-lalbn"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/lalbn/embed.js" charset="utf-8" data-target="#datawrapper-vis-lalbn"></script><noscript><img src="https://datawrapper.dwcdn.net/lalbn/full.png" alt="" /></noscript></div>
+</div>
 
-<div style="min-height:449px" id="datawrapper-vis-lalbn"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/lalbn/embed.js" charset="utf-8" data-target="#datawrapper-vis-lalbn"></script><noscript><img src="https://datawrapper.dwcdn.net/lalbn/full.png" alt="" /></noscript></div>
+<div style="margin-bottom: 40px">
+    <div style="min-height:447px" id="datawrapper-vis-NKWOu"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/NKWOu/embed.js" charset="utf-8" data-target="#datawrapper-vis-NKWOu"></script><noscript><img src="https://datawrapper.dwcdn.net/NKWOu/full.png" alt="" /></noscript></div>
+</div>
 
----
+<div style="margin-bottom: 40px">
+    <div style="min-height:447px" id="datawrapper-vis-LVly9"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/LVly9/embed.js" charset="utf-8" data-target="#datawrapper-vis-LVly9"></script><noscript><img src="https://datawrapper.dwcdn.net/LVly9/full.png" alt="" /></noscript></div>
+</div>
 
-<div style="min-height:447px" id="datawrapper-vis-NKWOu"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/NKWOu/embed.js" charset="utf-8" data-target="#datawrapper-vis-NKWOu"></script><noscript><img src="https://datawrapper.dwcdn.net/NKWOu/full.png" alt="" /></noscript></div>
-
----
-
-<div style="min-height:447px" id="datawrapper-vis-LVly9"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/LVly9/embed.js" charset="utf-8" data-target="#datawrapper-vis-LVly9"></script><noscript><img src="https://datawrapper.dwcdn.net/LVly9/full.png" alt="" /></noscript></div>
-
----
-
-<div style="min-height:447px" id="datawrapper-vis-ElYd0"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ElYd0/embed.js" charset="utf-8" data-target="#datawrapper-vis-ElYd0"></script><noscript><img src="https://datawrapper.dwcdn.net/ElYd0/full.png" alt="" /></noscript></div>
+<div style="margin-bottom: 40px">
+    <div style="min-height:447px" id="datawrapper-vis-ElYd0"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ElYd0/embed.js" charset="utf-8" data-target="#datawrapper-vis-ElYd0"></script><noscript><img src="https://datawrapper.dwcdn.net/ElYd0/full.png" alt="" /></noscript></div>
+</div>
