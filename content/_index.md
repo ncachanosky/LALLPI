@@ -12,50 +12,22 @@ sections:
         <div style="text-align: center; font-size: 30px">
             The <b>Latin American Left-Leaning Populism Index</b> (LALLPI) is a measure of active populist regimes in Latin America
         </div>
-    
-  - block: markdown
-    content:
-      title: 
-      text: |
-        <div style="text-align: center; font-size: 30px">
-            Coming soon!
-        </div>
     design:
       background:
-        color: darkorange
-        text_color_light: true
-  
-  - block: collection
-    content:
-      title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
-    design:
-      view: card
-      columns: '1'
-
-  - block: collection
-    content:
-      title: Latest Preprints
-      text: ""
-      count: 5
-      filters:
-        folders:
-          - publication
-        publication_type: 'article'
-    design:
-      view: citation
-      columns: '1'
+        color: #8A0808
+    
+#  - block: collection
+#    content:
+#      title: Latest Preprints
+#      text: ""
+#      count: 5
+#      filters:
+#        folders:
+#          - publication
+#        publication_type: 'article'
+#    design:
+#      view: citation
+#      columns: '1'
 
   - block: markdown
     content:
@@ -239,6 +211,27 @@ sections:
             </tr>
           </tbody>
         </table>
+
+        {{< cta cta_text="Download the data" cta_link="/databases" cta_new_tab="false" >}}
+
+  - block: collection
+    content:
+      title: Latest News
+      subtitle:
+      text:
+      count: 5
+      filters:
+        author: ''
+        category: ''
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
+      offset: 0
+      order: desc
+      page_type: post
+    design:
+      view: card
+      columns: '1'
 
   - block: markdown
     design:

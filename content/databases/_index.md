@@ -5,21 +5,28 @@ type: pages
 
 ## 2025 Version
 
-* **Publication date:** month, 2025  
+* **Release date:** April, 2025  
 * Version: 1
 * Countries covered: 21
 * Years covered: 2002-2019  
 
+
 ### Download files
 
-> {{< icon name="file-excel" >}} [Download Excel file](2025/index_2025.xlsx)  
-> {{< icon name="file-csv" >}} [Download csv file](2025/index_2025.csv)  
-> {{< icon name="database" >}} [Download STATA file](2025/index_2025.dta)  
-> {{< icon name="file-zipper" >}} [Download all visualizations](2025/visualizations_2025.zip)
+* [Download Excel file](2025/index_2025.xlsx)  
+* [Download csv file](2025/index_2025.csv)  
+* [Download STATA file](2025/index_2025.dta)  
+* [Download all visualizations](2025/visualizations_2025.zip)
+
+
+### Download python codes
+
+* [Download code builder](2025/index_code_2025.xlsx)  
+* [Download visualization builder]()
+
 
 ### Missing observations
 
 The `x` mark denotes an observation. A common reason for missing observations is no `POP_R` data for "independent" presidents who are not affiliated to a political party with V-Party data.
 
 {{< table path="missing_data_2025.csv" header="true" >}}
-
