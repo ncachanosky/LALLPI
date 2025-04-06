@@ -117,11 +117,3 @@ Looking at a time series for the region, the data shows an upward trend in the e
 <div style="margin-bottom: 40px">
     <div style="min-height:447px" id="datawrapper-vis-NKWOu"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/NKWOu/embed.js" charset="utf-8" data-target="#datawrapper-vis-NKWOu"></script><noscript><img src="https://datawrapper.dwcdn.net/NKWOu/full.png" alt="" /></noscript></div>
 </div>
-
-<div style="margin-bottom: 40px">
-    <div style="min-height:447px" id="datawrapper-vis-LVly9"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/LVly9/embed.js" charset="utf-8" data-target="#datawrapper-vis-LVly9"></script><noscript><img src="https://datawrapper.dwcdn.net/LVly9/full.png" alt="" /></noscript></div>
-</div>
-
-<div style="margin-bottom: 40px">
-    <div style="min-height:447px" id="datawrapper-vis-ElYd0"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ElYd0/embed.js" charset="utf-8" data-target="#datawrapper-vis-ElYd0"></script><noscript><img src="https://datawrapper.dwcdn.net/ElYd0/full.png" alt="" /></noscript></div>
-</div>
