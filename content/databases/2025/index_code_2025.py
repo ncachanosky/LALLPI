@@ -26,7 +26,7 @@ import os
 import pandas     as pd
 
 #### Settings
-PATH = 'C:/Users/ncachanosky/OneDrive/Research/populism-index/2025/'
+PATH = 'Insert/your/directory/path/here/'
 os.chdir(PATH)
 del PATH
 
@@ -35,7 +35,6 @@ del PATH
 
 #### Create dataset structure with empty rows
 START = 2000
-#START = 1990
 END   = 2020
 
 INDEX = pd.DataFrame({'ISO2'   : [],
@@ -115,6 +114,11 @@ del START, END, t, df_new
 # ============================================================================|
 # %% DATA | V-PARTY INDEX
 
+'''
+The index uses third-party dataset.
+All data files are located in 'your_directory_path/Data' folder.
+'''
+
 #### Data
 FILE = "Data/V-Party-2.dta."
 VPARTY = pd.read_stata(FILE)
@@ -177,7 +181,7 @@ VPARTY = pd.read_excel(FILE, sheet_name='INDEX', usecols="A,B,E,F,G")
 INDEX = pd.merge(INDEX, VPARTY, on=['ISO3','YEAR'])
 del VPARTY, FILE
 
-#### Extrapolate
+#### Extrapolate selected missing data
 INDEX = INDEX.sort_values(by=['COUNTRY', 'YEAR'])
 INDEX.loc[(INDEX["YEAR"] == 2004) & (INDEX["ISO3"] == "ARG"), "VPARTY"] = INDEX.loc[(INDEX["YEAR"].isin([2004, 2005])) & (INDEX["ISO3"] == "ARG"), "VPARTY"].interpolate(method="bfill", limit_direction="backward")
 INDEX.loc[(INDEX["YEAR"] == 2003) & (INDEX["ISO3"] == "ARG"), "VPARTY"] = INDEX.loc[(INDEX["YEAR"].isin([2003, 2004])) & (INDEX["ISO3"] == "ARG"), "VPARTY"].interpolate(method="bfill", limit_direction="backward")
@@ -187,9 +191,7 @@ INDEX.loc[(INDEX["YEAR"] == 2002) & (INDEX["ISO3"] == "NIC"), "VPARTY"] = INDEX.
 # %% DATA | V-DEM
 
 #### Data
-# Be patient with data import (can take a few minutes)
-# Then rename columns used for merging
-
+# Rename columns used for merging
 FILE = "Data/V-Dem-13.dta"
 VDEM = pd.read_stata(FILE)
 VDEM = VDEM.rename(columns={'country_text_id':'ISO3' })
@@ -228,7 +230,7 @@ del VDEM, VDEM_1, code1, code2, code3, code4, code5, code6, FILE
 
 
 # ============================================================================|
-# %% DATA | HERITAGE
+# %% DATA | HERITAGE'S INDEX OF ECONOMIC FREEDOM
 
 #### Data
 FILE  = "Data/heritage.xlsx"
@@ -271,7 +273,7 @@ del FILE, KEEP, HERITAGE
 
 
 # ============================================================================|
-# %% DATA | FRASER
+# %% DATA | FRASER'S ECONOMIC FREEDOM OF THE WORLD (EFW)
 
 #### Data
 FILE  = "Data/efw.xlsx"
@@ -370,7 +372,6 @@ INDEX['PIP_PERCENTILE'] = INDEX.groupby('YEAR')['PIP'].rank(pct=True)
 del IP11, IP12, IP13, IP21, IP22, IP1, IP2, IP3, IP4, IP5, IP6
 
 
-
 # ============================================================================|
 # %% INDEX | POPULISM OVERAL INDEX
 
@@ -466,8 +467,6 @@ TABLE = INDEX[KEEP]
 
 MISSING = TABLE.set_index(["COUNTRY", "YEAR"]).notna()
 MISSING = MISSING.replace({True: "X", False:""})
-
-
 
 
 TABLE.iloc[:,2] = MISSING.iloc[:,0].values

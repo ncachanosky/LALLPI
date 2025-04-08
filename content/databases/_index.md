@@ -16,7 +16,7 @@ type: pages
 * [Download Excel file](2025/index_2025.xlsx)  
 * [Download csv file](2025/index_2025.csv)  
 * [Download STATA file](2025/index_2025.dta)  
-* [Download all visualizations](2025/visualizations_2025.zip)
+* Download all visualizations (coming soon...)
 
 
 ### Download python codes
