@@ -16,13 +16,12 @@ type: pages
 * [Download Excel file](2025/index_2025.xlsx)  
 * [Download csv file](2025/index_2025.csv)  
 * [Download STATA file](2025/index_2025.dta)  
-* Download all visualizations (coming soon...)
 
 
 ### Download python codes
 
 * [Download code builder](2025/index_code_2025.xlsx)  
-* [Download visualization builder]()
+* Download all visualizations (coming soon...)
 
 
 ### Missing observations
