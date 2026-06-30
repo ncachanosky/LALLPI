@@ -1,0 +1,53 @@
+ISO2,ISO3,COUNTRY,REGION,LDC,LLDC,SIDS
+NA,AIA,Anguila,Caribbean,0,0,1
+NA,ATG,Antigua and Barbuda,Caribbean,0,0,1
+AR,ARG,Argentina,South America,0,0,0
+NA,SBW,Aruba,Caribbean,0,0,1
+BS,BHS,Bahamas,Caribbean,0,0,1
+BB,BRB,Barbados,Caribbean,0,0,1
+BZ,BLZ,Belize,Central America,0,0,1
+BO,BOL,Bolivia,South America,0,1,0
+NA,BES,Bonaire,Caribbean,0,0,0
+NA,BVT,Bouvet Island,South America,0,0,0
+BR,BRA,Brazil,South America,0,0,0
+NA,VGB,British Virgin Islands,Caribbean,0,0,1
+NA,CYM,Cayman Islands,Caribbean,0,0,0
+CL,CHL,Chile,South America,0,0,0
+CO,COL,Colombia,South America,0,0,0
+CR,CRI,Costa Rica,Central America,0,0,0
+NA,CUB,Cuba,Caribbean,0,0,1
+NA,CUW,Curaçao,Caribbean,0,0,1
+DM,DMA,Dominica,Caribbean,0,0,1
+DO,DOM,Dominican Republic,Caribbean,0,0,1
+EC,ECU,Ecuador,South America,0,0,0
+SV,SLV,El Salvador,Central America,0,0,0
+NA,FLK,Falkland Islands,South America,0,0,0
+NA,GUF,French Guiana,South America,0,0,0
+NA,GRD,Grenada,Caribbean,0,0,1
+NA,GLP,Guadeloupe,Caribbean,0,0,0
+GT,GTM,Guatemala,Central America,0,0,0
+GY,GUY,Guyana,South America,0,0,1
+HT,HTI,Haiti,Haiti,1,0,1
+HN,HND,Honduras,Central America,0,0,0
+JM,JAM,Jamaica,Caribbean,0,0,1
+NA,MTQ,Martinique,Caribbean,0,0,0
+MX,MEX,Mexico,Central America,0,0,0
+NA,MSR,Montserrat,Caribbean,0,0,1
+NI,NIC,Nicaragua,Central America,0,0,0
+PA,PAN,Panama,Central America,0,0,0
+PY,PRY,Paraguay,South America,0,1,0
+PE,PER,Peru,South America,0,0,0
+NA,PRI,Puerto Rico,Caribbean,0,0,1
+NA,BLM,Saint Barthélemy,Caribbean,0,0,0
+NA,KNA,Saint Kitts and Nevis,Caribbean,0,0,1
+LC,LCA,Saint Lucia,Caribbean,0,0,1
+NA,MAF,St. Martin (French Part),Caribbean,0,0,0
+VC,VCT,St. Vincent and the Grenadines,Caribbean,0,0,1
+NA,SXM,Sint Marteen (Dutch Part),Caribbean,0,0,1
+NA,SGS,South Georgia and the South Sandwich Islands,South America,0,0,0
+SR,SUR,Suriname,South America,0,0,1
+TT,TTO,Trinidad y Tobago,Caribbean,0,0,1
+NA,TCA,Turks and Caicos Island,Caribbean,0,0,0
+NA,VIR,United States Virgin Islands,Caribbean,0,0,1
+UY,URY,Uruguay,South America,0,0,0
+VE,VEN,Venezuela,South America,0,0,0
