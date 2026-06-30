@@ -1,0 +1,686 @@
+ISO3,YEAR,PARTY_GOV,PARTY_CODE,PARTY_NAME
+ARG,1990,623,PJ,Justicialist [Peronist] Party
+ARG,1991,623,PJ,Justicialist [Peronist] Party
+ARG,1992,623,PJ,Justicialist [Peronist] Party
+ARG,1993,623,PJ,Justicialist [Peronist] Party
+ARG,1994,623,PJ,Justicialist [Peronist] Party
+ARG,1995,623,PJ,Justicialist [Peronist] Party
+ARG,1996,623,PJ,Justicialist [Peronist] Party
+ARG,1997,623,PJ,Justicialist [Peronist] Party
+ARG,1998,623,PJ,Justicialist [Peronist] Party
+ARG,1999,623,PJ,Justicialist [Peronist] Party
+ARG,2000,1724,UCR,Radical Civic Union
+ARG,2001,1724,UCR,Radical Civic Union
+ARG,2002,623,PJ,Justicialist [Peronist] Party
+ARG,2003,2530,FPV-PJ,Front for Victory
+ARG,2004,2530,FPV-PJ,Front for Victory
+ARG,2005,2530,FPV-PJ,Front for Victory
+ARG,2006,2530,FPV-PJ,Front for Victory
+ARG,2007,2530,FPV-PJ,Front for Victory
+ARG,2008,2530,FPV-PJ,Front for Victory
+ARG,2009,2530,FPV-PJ,Front for Victory
+ARG,2010,2530,FPV-PJ,Front for Victory
+ARG,2011,2530,FPV-PJ,Front for Victory
+ARG,2012,2530,FPV-PJ,Front for Victory
+ARG,2013,2530,FPV-PJ,Front for Victory
+ARG,2014,2530,FPV-PJ,Front for Victory
+ARG,2015,2530,FPV-PJ,Front for Victory
+ARG,2016,1790,PRO,Republican Proposal
+ARG,2017,1790,PRO,Republican Proposal
+ARG,2018,1790,PRO,Republican Proposal
+ARG,2019,1790,PRO,Republican Proposal
+ARG,2020,2530,FPV-PJ,Front for Victory
+ARG,2021,2530,FPV-PJ,Front for Victory
+ARG,2022,2530,FPV-PJ,Front for Victory
+BOL,1990,4387,MIR,Revolutionary Left Movement - New Majority
+BOL,1991,4387,MIR,Revolutionary Left Movement - New Majority
+BOL,1992,4387,MIR,Revolutionary Left Movement - New Majority
+BOL,1993,4387,MIR,Revolutionary Left Movement - New Majority
+BOL,1994,568,MNR,Revolutionary Nationalist Movement
+BOL,1995,568,MNR,Revolutionary Nationalist Movement
+BOL,1996,568,MNR,Revolutionary Nationalist Movement
+BOL,1997,568,MNR,Revolutionary Nationalist Movement
+BOL,1998,4393,ADN,Nationalist Democratic Action
+BOL,1999,4393,ADN,Nationalist Democratic Action
+BOL,2000,4393,ADN,Nationalist Democratic Action
+BOL,2001,4393,ADN,Nationalist Democratic Action
+BOL,2002,4393,ADN,Nationalist Democratic Action
+BOL,2003,568,MNR,Revolutionary Nationalist Movement
+BOL,2006,442,MAS,Movement for Socialism
+BOL,2007,442,MAS,Movement for Socialism
+BOL,2008,442,MAS,Movement for Socialism
+BOL,2009,442,MAS,Movement for Socialism
+BOL,2010,442,MAS,Movement for Socialism
+BOL,2011,442,MAS,Movement for Socialism
+BOL,2012,442,MAS,Movement for Socialism
+BOL,2013,442,MAS,Movement for Socialism
+BOL,2014,442,MAS,Movement for Socialism
+BOL,2015,442,MAS,Movement for Socialism
+BOL,2016,442,MAS,Movement for Socialism
+BOL,2017,442,MAS,Movement for Socialism
+BOL,2018,442,MAS,Movement for Socialism
+BOL,2019,442,MAS,Movement for Socialism
+BOL,2021,442,MAS,Movement for Socialism
+BOL,2022,442,MAS,Movement for Socialism
+BRA,1990,4410,PRN,National Reconstruction Party / Christian Labour Party
+BRA,1991,4410,PRN,National Reconstruction Party / Christian Labour Party
+BRA,1992,4410,PRN,National Reconstruction Party / Christian Labour Party
+BRA,1993,654,PMDB,Partido do Movimento Democrático Brasileiro
+BRA,1994,654,PMDB,Partido do Movimento Democrático Brasileiro
+BRA,1995,225,PSDB,Brazilian Social Democracy Party
+BRA,1996,225,PSDB,Brazilian Social Democracy Party
+BRA,1997,225,PSDB,Brazilian Social Democracy Party
+BRA,1998,225,PSDB,Brazilian Social Democracy Party
+BRA,1999,225,PSDB,Brazilian Social Democracy Party
+BRA,2000,225,PSDB,Brazilian Social Democracy Party
+BRA,2001,225,PSDB,Brazilian Social Democracy Party
+BRA,2002,225,PSDB,Brazilian Social Democracy Party
+BRA,2003,356,PT,Workers' Party
+BRA,2004,356,PT,Workers' Party
+BRA,2005,356,PT,Workers' Party
+BRA,2006,356,PT,Workers' Party
+BRA,2007,356,PT,Workers' Party
+BRA,2008,356,PT,Workers' Party
+BRA,2009,356,PT,Workers' Party
+BRA,2010,356,PT,Workers' Party
+BRA,2011,356,PT,Workers' Party
+BRA,2012,356,PT,Workers' Party
+BRA,2013,356,PT,Workers' Party
+BRA,2014,356,PT,Workers' Party
+BRA,2015,356,PT,Workers' Party
+BRA,2016,356,PT,Workers' Party
+BRA,2017,654,PMDB,Partido do Movimento Democrático Brasileiro
+BRA,2018,654,PMDB,Partido do Movimento Democrático Brasileiro
+BRB,1990,3686,DLP,Democratic Labour Party
+BRB,1991,3686,DLP,Democratic Labour Party
+BRB,1992,3686,DLP,Democratic Labour Party
+BRB,1993,3686,DLP,Democratic Labour Party
+BRB,1994,3686,DLP,Democratic Labour Party
+BRB,1995,3694,BLP,Barbados Labour Party
+BRB,1996,3694,BLP,Barbados Labour Party
+BRB,1997,3694,BLP,Barbados Labour Party
+BRB,1998,3694,BLP,Barbados Labour Party
+BRB,1999,3694,BLP,Barbados Labour Party
+BRB,2000,3694,BLP,Barbados Labour Party
+BRB,2001,3694,BLP,Barbados Labour Party
+BRB,2002,3694,BLP,Barbados Labour Party
+BRB,2003,3694,BLP,Barbados Labour Party
+BRB,2004,3694,BLP,Barbados Labour Party
+BRB,2005,3694,BLP,Barbados Labour Party
+BRB,2006,3694,BLP,Barbados Labour Party
+BRB,2007,3694,BLP,Barbados Labour Party
+BRB,2008,3686,DLP,Democratic Labour Party
+BRB,2009,3686,DLP,Democratic Labour Party
+BRB,2010,3686,DLP,Democratic Labour Party
+BRB,2011,3686,DLP,Democratic Labour Party
+BRB,2012,3686,DLP,Democratic Labour Party
+BRB,2013,3686,DLP,Democratic Labour Party
+BRB,2014,3686,DLP,Democratic Labour Party
+BRB,2015,3686,DLP,Democratic Labour Party
+BRB,2016,3686,DLP,Democratic Labour Party
+BRB,2017,3686,DLP,Democratic Labour Party
+BRB,2018,3694,BLP,Barbados Labour Party
+BRB,2019,3694,BLP,Barbados Labour Party
+CHL,1993,390,PDC,Christian Democratic Party
+CHL,1994,390,PDC,Christian Democratic Party
+CHL,1995,390,PDC,Christian Democratic Party
+CHL,1996,390,PDC,Christian Democratic Party
+CHL,1997,390,PDC,Christian Democratic Party
+CHL,1998,390,PDC,Christian Democratic Party
+CHL,1999,390,PDC,Christian Democratic Party
+CHL,2000,54,PPD,Party for Democracy
+CHL,2001,54,PPD,Party for Democracy
+CHL,2002,54,PPD,Party for Democracy
+CHL,2003,54,PPD,Party for Democracy
+CHL,2004,54,PPD,Party for Democracy
+CHL,2005,6,PS,Socialist Party of Chile
+CHL,2006,6,PS,Socialist Party of Chile
+CHL,2007,6,PS,Socialist Party of Chile
+CHL,2008,6,PS,Socialist Party of Chile
+CHL,2009,6,PS,Socialist Party of Chile
+CHL,2010,928,RN,National Renewal
+CHL,2011,928,RN,National Renewal
+CHL,2012,928,RN,National Renewal
+CHL,2013,928,RN,National Renewal
+CHL,2014,6,PS,Socialist Party of Chile
+CHL,2015,6,PS,Socialist Party of Chile
+CHL,2016,6,PS,Socialist Party of Chile
+CHL,2017,6,PS,Socialist Party of Chile
+CHL,2018,928,RN,National Renewal
+CHL,2019,928,RN,National Renewal
+CHL,2020,928,RN,National Renewal
+CHL,2021,928,RN,National Renewal
+COL,1990,362,PLC,Colombian Liberal Party
+COL,1991,362,PLC,Colombian Liberal Party
+COL,1992,362,PLC,Colombian Liberal Party
+COL,1993,362,PLC,Colombian Liberal Party
+COL,1994,362,PLC,Colombian Liberal Party
+COL,1995,362,PLC,Colombian Liberal Party
+COL,1996,362,PLC,Colombian Liberal Party
+COL,1997,362,PLC,Colombian Liberal Party
+COL,1998,362,PLC,Colombian Liberal Party
+COL,1999,1577,PCC,Colombian Conservative Party
+COL,2000,1577,PCC,Colombian Conservative Party
+COL,2001,1577,PCC,Colombian Conservative Party
+COL,2002,1577,PCC,Colombian Conservative Party
+COL,2011,759,Partido-U,Social Party of National Unity
+COL,2012,759,Partido-U,Social Party of National Unity
+COL,2013,759,Partido-U,Social Party of National Unity
+COL,2014,759,Partido-U,Social Party of National Unity
+COL,2015,759,Partido-U,Social Party of National Unity
+COL,2016,759,Partido-U,Social Party of National Unity
+COL,2017,759,Partido-U,Social Party of National Unity
+COL,2018,759,Partido-U,Social Party of National Unity
+COL,2019,5879,CD,Democratic Centre
+COL,2020,5879,CD,Democratic Centre
+COL,2021,5879,CD,Democratic Centre
+COL,2022,5879,CD,Democratic Centre
+CRI,1990,1199,PUSC,Social Christian Unity Party
+CRI,1991,1199,PUSC,Social Christian Unity Party
+CRI,1992,1199,PUSC,Social Christian Unity Party
+CRI,1993,1199,PUSC,Social Christian Unity Party
+CRI,1994,1367,PLN,National Liberation Party
+CRI,1995,1367,PLN,National Liberation Party
+CRI,1996,1367,PLN,National Liberation Party
+CRI,1997,1367,PLN,National Liberation Party
+CRI,1998,1199,PUSC,Social Christian Unity Party
+CRI,1999,1199,PUSC,Social Christian Unity Party
+CRI,2000,1199,PUSC,Social Christian Unity Party
+CRI,2001,1199,PUSC,Social Christian Unity Party
+CRI,2002,1199,PUSC,Social Christian Unity Party
+CRI,2003,1199,PUSC,Social Christian Unity Party
+CRI,2004,1199,PUSC,Social Christian Unity Party
+CRI,2005,1199,PUSC,Social Christian Unity Party
+CRI,2006,1367,PLN,National Liberation Party
+CRI,2007,1367,PLN,National Liberation Party
+CRI,2008,1367,PLN,National Liberation Party
+CRI,2009,1367,PLN,National Liberation Party
+CRI,2010,1367,PLN,National Liberation Party
+CRI,2011,1367,PLN,National Liberation Party
+CRI,2012,1367,PLN,National Liberation Party
+CRI,2013,1367,PLN,National Liberation Party
+CRI,2014,1247,PAC,Citizens' Action Party
+CRI,2015,1247,PAC,Citizens' Action Party
+CRI,2016,1247,PAC,Citizens' Action Party
+CRI,2017,1247,PAC,Citizens' Action Party
+CRI,2018,1247,PAC,Citizens' Action Party
+CRI,2019,1247,PAC,Citizens' Action Party
+CUB,1993,4892,PCC,Communist Party of Cuba
+CUB,1994,4892,PCC,Communist Party of Cuba
+CUB,1995,4892,PCC,Communist Party of Cuba
+CUB,1996,4892,PCC,Communist Party of Cuba
+CUB,1997,4892,PCC,Communist Party of Cuba
+CUB,1998,4892,PCC,Communist Party of Cuba
+CUB,1999,4892,PCC,Communist Party of Cuba
+CUB,2000,4892,PCC,Communist Party of Cuba
+CUB,2001,4892,PCC,Communist Party of Cuba
+CUB,2002,4892,PCC,Communist Party of Cuba
+CUB,2003,4892,PCC,Communist Party of Cuba
+CUB,2004,4892,PCC,Communist Party of Cuba
+CUB,2005,4892,PCC,Communist Party of Cuba
+CUB,2006,4892,PCC,Communist Party of Cuba
+CUB,2007,4892,PCC,Communist Party of Cuba
+CUB,2008,4892,PCC,Communist Party of Cuba
+CUB,2009,4892,PCC,Communist Party of Cuba
+CUB,2010,4892,PCC,Communist Party of Cuba
+CUB,2011,4892,PCC,Communist Party of Cuba
+CUB,2012,4892,PCC,Communist Party of Cuba
+CUB,2013,4892,PCC,Communist Party of Cuba
+CUB,2014,4892,PCC,Communist Party of Cuba
+CUB,2015,4892,PCC,Communist Party of Cuba
+CUB,2016,4892,PCC,Communist Party of Cuba
+CUB,2017,4892,PCC,Communist Party of Cuba
+CUB,2018,4892,PCC,Communist Party of Cuba
+CUB,2019,4892,PCC,Communist Party of Cuba
+DOM,1990,194,PRSC,Social Christian Reformist Party
+DOM,1991,194,PRSC,Social Christian Reformist Party
+DOM,1992,194,PRSC,Social Christian Reformist Party
+DOM,1993,194,PRSC,Social Christian Reformist Party
+DOM,1994,194,PRSC,Social Christian Reformist Party
+DOM,1995,194,PRSC,Social Christian Reformist Party
+DOM,1996,194,PRSC,Social Christian Reformist Party
+DOM,1997,1225,PLD,Dominican Liberation Party
+DOM,1998,1225,PLD,Dominican Liberation Party
+DOM,1999,1225,PLD,Dominican Liberation Party
+DOM,2000,1225,PLD,Dominican Liberation Party
+DOM,2001,1441,PRD,Dominican Revolutionary Party
+DOM,2002,1441,PRD,Dominican Revolutionary Party
+DOM,2003,1441,PRD,Dominican Revolutionary Party
+DOM,2004,1441,PRD,Dominican Revolutionary Party
+DOM,2005,1225,PLD,Dominican Liberation Party
+DOM,2006,1225,PLD,Dominican Liberation Party
+DOM,2007,1225,PLD,Dominican Liberation Party
+DOM,2008,1225,PLD,Dominican Liberation Party
+DOM,2009,1225,PLD,Dominican Liberation Party
+DOM,2010,1225,PLD,Dominican Liberation Party
+DOM,2011,1225,PLD,Dominican Liberation Party
+DOM,2012,1225,PLD,Dominican Liberation Party
+DOM,2013,1225,PLD,Dominican Liberation Party
+DOM,2014,1225,PLD,Dominican Liberation Party
+DOM,2015,1225,PLD,Dominican Liberation Party
+DOM,2016,1225,PLD,Dominican Liberation Party
+DOM,2017,1225,PLD,Dominican Liberation Party
+DOM,2018,1225,PLD,Dominican Liberation Party
+DOM,2019,1225,PLD,Dominican Liberation Party
+ECU,1990,797,ID,Democratic Left
+ECU,1991,797,ID,Democratic Left
+ECU,1992,797,ID,Democratic Left
+ECU,1993,4271,PUR,Republican Unity Party
+ECU,1994,4271,PUR,Republican Unity Party
+ECU,1995,4271,PUR,Republican Unity Party
+ECU,1996,4271,PUR,Republican Unity Party
+ECU,1997,4198,FRA,Alfarista Radical Front
+ECU,1998,4198,FRA,Alfarista Radical Front
+ECU,1999,1405,UDC/DP,Christian Democratic Union / Popular Democracy
+ECU,2003,246,PSP,Patriotic Society Party
+ECU,2004,246,PSP,Patriotic Society Party
+ECU,2007,4044,PAIS,PAIS Alliance
+ECU,2008,4044,PAIS,PAIS Alliance
+ECU,2009,4044,PAIS,PAIS Alliance
+ECU,2010,4044,PAIS,PAIS Alliance
+ECU,2011,4044,PAIS,PAIS Alliance
+ECU,2012,4044,PAIS,PAIS Alliance
+ECU,2013,4044,PAIS,PAIS Alliance
+ECU,2014,4044,PAIS,PAIS Alliance
+ECU,2015,4044,PAIS,PAIS Alliance
+ECU,2016,4044,PAIS,PAIS Alliance
+ECU,2017,4044,PAIS,PAIS Alliance
+ECU,2018,4044,PAIS,PAIS Alliance
+ECU,2019,4044,PAIS,PAIS Alliance
+GTM,1990,1322,DCG,Guatemalan Christian Democracy
+GTM,1991,5505,MAS,Solidarity Action Movement
+GTM,1992,5505,MAS,Solidarity Action Movement
+GTM,1996,1035,PAN,National Advancement Party
+GTM,1997,1035,PAN,National Advancement Party
+GTM,1998,1035,PAN,National Advancement Party
+GTM,1999,1035,PAN,National Advancement Party
+GTM,2000,941,FRG,Guatemalan Republican Front
+GTM,2001,941,FRG,Guatemalan Republican Front
+GTM,2002,941,FRG,Guatemalan Republican Front
+GTM,2003,941,FRG,Guatemalan Republican Front
+GTM,2004,538,GANA,Grand National Alliance
+GTM,2005,538,GANA,Grand National Alliance
+GTM,2006,538,GANA,Grand National Alliance
+GTM,2007,538,GANA,Grand National Alliance
+GTM,2008,1668,UNE,National Unity of Hope
+GTM,2009,1668,UNE,National Unity of Hope
+GTM,2010,1668,UNE,National Unity of Hope
+GTM,2011,1668,UNE,National Unity of Hope
+GTM,2012,524,PP,Patriotic Party
+GTM,2013,524,PP,Patriotic Party
+GTM,2014,524,PP,Patriotic Party
+GTM,2015,524,PP,Patriotic Party
+GTM,2016,5955,FCN,National Convergence Front
+GTM,2017,5955,FCN,National Convergence Front
+GTM,2018,5955,FCN,National Convergence Front
+GTM,2019,5955,FCN,National Convergence Front
+GUY,1990,4247,PNC,People's National Congress – Reform
+GUY,1991,4247,PNC,People's National Congress – Reform
+GUY,1992,4247,PNC,People's National Congress – Reform
+GUY,1993,4246,PPP,People's Progressive Party
+GUY,1994,4246,PPP,People's Progressive Party
+GUY,1995,4246,PPP,People's Progressive Party
+GUY,1996,4246,PPP,People's Progressive Party
+GUY,1997,4246,PPP,People's Progressive Party
+GUY,1998,4246,PPP,People's Progressive Party
+GUY,1999,4246,PPP,People's Progressive Party
+GUY,2000,4246,PPP,People's Progressive Party
+GUY,2001,4246,PPP,People's Progressive Party
+GUY,2002,4246,PPP,People's Progressive Party
+GUY,2003,4246,PPP,People's Progressive Party
+GUY,2004,4246,PPP,People's Progressive Party
+GUY,2005,4246,PPP,People's Progressive Party
+GUY,2006,4246,PPP,People's Progressive Party
+GUY,2007,4246,PPP,People's Progressive Party
+GUY,2008,4246,PPP,People's Progressive Party
+GUY,2009,4246,PPP,People's Progressive Party
+GUY,2010,4246,PPP,People's Progressive Party
+GUY,2011,4246,PPP,People's Progressive Party
+GUY,2012,4246,PPP,People's Progressive Party
+GUY,2013,4246,PPP,People's Progressive Party
+GUY,2014,4246,PPP,People's Progressive Party
+GUY,2015,4247,PNC,People's National Congress – Reform
+GUY,2016,4247,PNC,People's National Congress – Reform
+GUY,2017,4247,PNC,People's National Congress – Reform
+GUY,2018,4247,PNC,People's National Congress – Reform
+GUY,2019,4247,PNC,People's National Congress – Reform
+HND,1990,1416,PNH,National Party of Honduras
+HND,1991,1416,PNH,National Party of Honduras
+HND,1992,1416,PNH,National Party of Honduras
+HND,1993,1416,PNH,National Party of Honduras
+HND,1994,593,PLH,Liberal Party of Honduras
+HND,1995,593,PLH,Liberal Party of Honduras
+HND,1996,593,PLH,Liberal Party of Honduras
+HND,1997,593,PLH,Liberal Party of Honduras
+HND,1998,593,PLH,Liberal Party of Honduras
+HND,1999,593,PLH,Liberal Party of Honduras
+HND,2000,593,PLH,Liberal Party of Honduras
+HND,2001,593,PLH,Liberal Party of Honduras
+HND,2002,1416,PNH,National Party of Honduras
+HND,2003,1416,PNH,National Party of Honduras
+HND,2004,1416,PNH,National Party of Honduras
+HND,2005,1416,PNH,National Party of Honduras
+HND,2006,593,PLH,Liberal Party of Honduras
+HND,2007,593,PLH,Liberal Party of Honduras
+HND,2008,593,PLH,Liberal Party of Honduras
+HND,2009,593,PLH,Liberal Party of Honduras
+HND,2010,1416,PNH,National Party of Honduras
+HND,2011,1416,PNH,National Party of Honduras
+HND,2012,1416,PNH,National Party of Honduras
+HND,2013,1416,PNH,National Party of Honduras
+HND,2014,1416,PNH,National Party of Honduras
+HND,2015,1416,PNH,National Party of Honduras
+HND,2016,1416,PNH,National Party of Honduras
+HND,2017,1416,PNH,National Party of Honduras
+HND,2018,1416,PNH,National Party of Honduras
+HND,2019,1416,PNH,National Party of Honduras
+HTI,1990,5269,FNCD,National Front for Change and Democracy
+HTI,1995,5268,FL,Lavalas Family
+HTI,1996,5268,FL,Lavalas Family
+HTI,1997,5268,FL,Lavalas Family
+HTI,1998,5268,FL,Lavalas Family
+HTI,1999,5268,FL,Lavalas Family
+HTI,2000,5268,FL,Lavalas Family
+HTI,2001,5268,FL,Lavalas Family
+HTI,2002,5268,FL,Lavalas Family
+HTI,2003,5268,FL,Lavalas Family
+HTI,2004,5268,FL,Lavalas Family
+HTI,2005,5268,FL,Lavalas Family
+HTI,2006,5268,FL,Lavalas Family
+HTI,2007,5268,FL,Lavalas Family
+HTI,2008,5268,FL,Lavalas Family
+HTI,2009,5268,FL,Lavalas Family
+HTI,2010,5268,FL,Lavalas Family
+HTI,2011,5268,FL,Lavalas Family
+HTI,2012,5268,FL,Lavalas Family
+HTI,2013,5268,FL,Lavalas Family
+HTI,2014,5268,FL,Lavalas Family
+HTI,2015,5268,FL,Lavalas Family
+JAM,1993,2309,PNP,People's National Party
+JAM,1994,2309,PNP,People's National Party
+JAM,1995,2309,PNP,People's National Party
+JAM,1996,2309,PNP,People's National Party
+JAM,1997,2309,PNP,People's National Party
+JAM,1998,2309,PNP,People's National Party
+JAM,1999,2309,PNP,People's National Party
+JAM,2000,2309,PNP,People's National Party
+JAM,2001,2309,PNP,People's National Party
+JAM,2002,2309,PNP,People's National Party
+JAM,2003,2309,PNP,People's National Party
+JAM,2004,2309,PNP,People's National Party
+JAM,2005,2309,PNP,People's National Party
+JAM,2006,2309,PNP,People's National Party
+JAM,2007,2309,PNP,People's National Party
+JAM,2008,2308,JLP,Jamaica Labour Party
+JAM,2009,2308,JLP,Jamaica Labour Party
+JAM,2010,2308,JLP,Jamaica Labour Party
+JAM,2011,2308,JLP,Jamaica Labour Party
+JAM,2012,2309,PNP,People's National Party
+JAM,2013,2309,PNP,People's National Party
+JAM,2014,2309,PNP,People's National Party
+JAM,2015,2309,PNP,People's National Party
+JAM,2016,2308,JLP,Jamaica Labour Party
+JAM,2017,2308,JLP,Jamaica Labour Party
+JAM,2018,2308,JLP,Jamaica Labour Party
+JAM,2019,2308,JLP,Jamaica Labour Party
+MEX,1991,1474,PRI,Institutional Revolutionary Party
+MEX,1992,1474,PRI,Institutional Revolutionary Party
+MEX,1993,1474,PRI,Institutional Revolutionary Party
+MEX,1994,1474,PRI,Institutional Revolutionary Party
+MEX,1995,1474,PRI,Institutional Revolutionary Party
+MEX,1996,1474,PRI,Institutional Revolutionary Party
+MEX,1997,1474,PRI,Institutional Revolutionary Party
+MEX,1998,1474,PRI,Institutional Revolutionary Party
+MEX,1999,1474,PRI,Institutional Revolutionary Party
+MEX,2000,1474,PRI,Institutional Revolutionary Party
+MEX,2001,696,PAN,National Action Party
+MEX,2002,696,PAN,National Action Party
+MEX,2003,696,PAN,National Action Party
+MEX,2004,696,PAN,National Action Party
+MEX,2005,696,PAN,National Action Party
+MEX,2006,696,PAN,National Action Party
+MEX,2007,696,PAN,National Action Party
+MEX,2008,696,PAN,National Action Party
+MEX,2009,696,PAN,National Action Party
+MEX,2010,696,PAN,National Action Party
+MEX,2011,696,PAN,National Action Party
+MEX,2012,696,PAN,National Action Party
+MEX,2013,1474,PRI,Institutional Revolutionary Party
+MEX,2014,1474,PRI,Institutional Revolutionary Party
+MEX,2015,1474,PRI,Institutional Revolutionary Party
+MEX,2016,1474,PRI,Institutional Revolutionary Party
+MEX,2017,1474,PRI,Institutional Revolutionary Party
+MEX,2018,1474,PRI,Institutional Revolutionary Party
+MEX,2019,6110,MORENA,National Regeneration Movement
+NIC,1990,7145,UNO,National Opposition Union
+NIC,1991,7145,UNO,National Opposition Union
+NIC,1992,7145,UNO,National Opposition Union
+NIC,1993,7145,UNO,National Opposition Union
+NIC,1994,7145,UNO,National Opposition Union
+NIC,1995,7145,UNO,National Opposition Union
+NIC,1996,7145,UNO,National Opposition Union
+NIC,1997,286,PLC,Constitutionalist Liberal Party
+NIC,1998,286,PLC,Constitutionalist Liberal Party
+NIC,1999,286,PLC,Constitutionalist Liberal Party
+NIC,2000,286,PLC,Constitutionalist Liberal Party
+NIC,2001,286,PLC,Constitutionalist Liberal Party
+NIC,2002,286,PLC,Constitutionalist Liberal Party
+NIC,2003,286,PLC,Constitutionalist Liberal Party
+NIC,2004,286,PLC,Constitutionalist Liberal Party
+NIC,2005,286,PLC,Constitutionalist Liberal Party
+NIC,2006,286,PLC,Constitutionalist Liberal Party
+NIC,2007,769,FSLN,Sandinista National Liberation Front
+NIC,2008,769,FSLN,Sandinista National Liberation Front
+NIC,2009,769,FSLN,Sandinista National Liberation Front
+NIC,2010,769,FSLN,Sandinista National Liberation Front
+NIC,2011,769,FSLN,Sandinista National Liberation Front
+NIC,2012,769,FSLN,Sandinista National Liberation Front
+NIC,2013,769,FSLN,Sandinista National Liberation Front
+NIC,2014,769,FSLN,Sandinista National Liberation Front
+NIC,2015,769,FSLN,Sandinista National Liberation Front
+NIC,2016,769,FSLN,Sandinista National Liberation Front
+NIC,2017,769,FSLN,Sandinista National Liberation Front
+NIC,2018,769,FSLN,Sandinista National Liberation Front
+NIC,2019,769,FSLN,Sandinista National Liberation Front
+PAN,1990,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,1991,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,1992,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,1993,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,1994,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,1995,1351,PRD,Democratic Revolutionary Party
+PAN,1996,1351,PRD,Democratic Revolutionary Party
+PAN,1997,1351,PRD,Democratic Revolutionary Party
+PAN,1998,1351,PRD,Democratic Revolutionary Party
+PAN,1999,1351,PRD,Democratic Revolutionary Party
+PAN,2000,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2001,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2002,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2003,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2004,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2005,1351,PRD,Democratic Revolutionary Party
+PAN,2006,1351,PRD,Democratic Revolutionary Party
+PAN,2007,1351,PRD,Democratic Revolutionary Party
+PAN,2008,1351,PRD,Democratic Revolutionary Party
+PAN,2009,1351,PRD,Democratic Revolutionary Party
+PAN,2010,59,CD,Democratic Change
+PAN,2011,59,CD,Democratic Change
+PAN,2012,59,CD,Democratic Change
+PAN,2013,59,CD,Democratic Change
+PAN,2014,59,CD,Democratic Change
+PAN,2015,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2016,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2017,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2018,202,PPA,Panamenista Party / Authentic Panameñista Party
+PAN,2019,202,PPA,Panamenista Party / Authentic Panameñista Party
+PER,1990,529,APRA/PAP,American Popular Revolutionary Alliance / Peruvian Aprista Party
+PER,1991,4219,NM,Change 90
+PER,1992,4219,NM,Change 90
+PER,1993,4219,NM,Change 90
+PER,1994,4219,NM,Change 90
+PER,1995,4219,NM,Change 90
+PER,1996,4219,NM,Change 90
+PER,1997,4219,NM,Change 90
+PER,1998,4219,NM,Change 90
+PER,1999,4219,NM,Change 90
+PER,2000,4219,NM,Change 90
+PER,2001,514,AP,Popular Action
+PER,2002,4861,PP,Peru Posible
+PER,2003,4861,PP,Peru Posible
+PER,2004,4861,PP,Peru Posible
+PER,2005,4861,PP,Peru Posible
+PER,2006,4861,PP,Peru Posible
+PER,2007,529,APRA/PAP,American Popular Revolutionary Alliance / Peruvian Aprista Party
+PER,2008,529,APRA/PAP,American Popular Revolutionary Alliance / Peruvian Aprista Party
+PER,2009,529,APRA/PAP,American Popular Revolutionary Alliance / Peruvian Aprista Party
+PER,2010,529,APRA/PAP,American Popular Revolutionary Alliance / Peruvian Aprista Party
+PER,2011,529,APRA/PAP,American Popular Revolutionary Alliance / Peruvian Aprista Party
+PER,2012,345,PNP,Peruvian Nationalist Party
+PER,2013,345,PNP,Peruvian Nationalist Party
+PER,2014,345,PNP,Peruvian Nationalist Party
+PER,2015,345,PNP,Peruvian Nationalist Party
+PER,2016,345,PNP,Peruvian Nationalist Party
+PER,2017,6647,PPK,Peruvians for Change
+PRY,1990,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1991,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1992,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1993,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1994,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1995,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1996,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1997,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1998,384,ANR-PC,National Republican Association – Colorado Party
+PRY,1999,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2000,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2001,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2002,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2003,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2004,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2005,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2006,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2007,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2008,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2013,1245,PLRA,Authentic Radical Liberal Party
+PRY,2014,1245,PLRA,Authentic Radical Liberal Party
+PRY,2015,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2016,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2017,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2018,384,ANR-PC,National Republican Association – Colorado Party
+PRY,2019,384,ANR-PC,National Republican Association – Colorado Party
+SLV,1990,1709,ARENA,Nationalist Republican Alliance
+SLV,1991,1709,ARENA,Nationalist Republican Alliance
+SLV,1992,1709,ARENA,Nationalist Republican Alliance
+SLV,1993,1709,ARENA,Nationalist Republican Alliance
+SLV,1994,1709,ARENA,Nationalist Republican Alliance
+SLV,1995,1709,ARENA,Nationalist Republican Alliance
+SLV,1996,1709,ARENA,Nationalist Republican Alliance
+SLV,1997,1709,ARENA,Nationalist Republican Alliance
+SLV,1998,1709,ARENA,Nationalist Republican Alliance
+SLV,1999,1709,ARENA,Nationalist Republican Alliance
+SLV,2000,1709,ARENA,Nationalist Republican Alliance
+SLV,2001,1709,ARENA,Nationalist Republican Alliance
+SLV,2002,1709,ARENA,Nationalist Republican Alliance
+SLV,2003,1709,ARENA,Nationalist Republican Alliance
+SLV,2004,1709,ARENA,Nationalist Republican Alliance
+SLV,2005,1709,ARENA,Nationalist Republican Alliance
+SLV,2006,1709,ARENA,Nationalist Republican Alliance
+SLV,2007,1709,ARENA,Nationalist Republican Alliance
+SLV,2008,1709,ARENA,Nationalist Republican Alliance
+SLV,2009,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2010,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2011,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2012,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2013,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2014,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2015,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2016,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2017,978,FMLN,Farabundo Martí National Liberation Front
+SLV,2018,978,FMLN,Farabundo Martí National Liberation Front
+TTO,1991,4284,NAR,National Alliance for Reconstruction
+TTO,1992,4284,NAR,National Alliance for Reconstruction
+TTO,1993,4283,PNM,People’s National Movement
+TTO,1994,4283,PNM,People’s National Movement
+TTO,1995,4283,PNM,People’s National Movement
+TTO,1996,4281,UNC,United National Congress
+TTO,1997,4281,UNC,United National Congress
+TTO,1998,4281,UNC,United National Congress
+TTO,1999,4281,UNC,United National Congress
+TTO,2000,4281,UNC,United National Congress
+TTO,2001,4281,UNC,United National Congress
+TTO,2002,4283,PNM,People’s National Movement
+TTO,2003,4283,PNM,People’s National Movement
+TTO,2004,4283,PNM,People’s National Movement
+TTO,2005,4283,PNM,People’s National Movement
+TTO,2006,4283,PNM,People’s National Movement
+TTO,2007,4283,PNM,People’s National Movement
+TTO,2008,4283,PNM,People’s National Movement
+TTO,2009,4283,PNM,People’s National Movement
+TTO,2010,4281,UNC,United National Congress
+TTO,2011,4281,UNC,United National Congress
+TTO,2012,4281,UNC,United National Congress
+TTO,2013,4281,UNC,United National Congress
+TTO,2014,4281,UNC,United National Congress
+TTO,2015,4281,UNC,United National Congress
+TTO,2016,4283,PNM,People’s National Movement
+TTO,2017,4283,PNM,People’s National Movement
+TTO,2018,4283,PNM,People’s National Movement
+TTO,2019,4283,PNM,People’s National Movement
+URY,1990,118,PN,National Party
+URY,1991,118,PN,National Party
+URY,1992,118,PN,National Party
+URY,1993,118,PN,National Party
+URY,1994,118,PN,National Party
+URY,1995,1419,PC,Colorado Party
+URY,1996,1419,PC,Colorado Party
+URY,1997,1419,PC,Colorado Party
+URY,1998,1419,PC,Colorado Party
+URY,1999,1419,PC,Colorado Party
+URY,2000,1419,PC,Colorado Party
+URY,2001,1419,PC,Colorado Party
+URY,2002,1419,PC,Colorado Party
+URY,2003,1419,PC,Colorado Party
+URY,2004,1419,PC,Colorado Party
+URY,2005,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2006,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2007,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2008,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2009,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2010,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2011,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2012,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2013,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2014,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2015,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2016,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2017,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2018,1658,FA/EP,Broad Front / Progressive Encounter
+URY,2019,1658,FA/EP,Broad Front / Progressive Encounter
+VEN,1990,862,AD,Democratic Action
+VEN,1991,862,AD,Democratic Action
+VEN,1992,862,AD,Democratic Action
+VEN,1993,862,AD,Democratic Action
+VEN,1994,4804,CN,National Convergence
+VEN,1995,4804,CN,National Convergence
+VEN,1996,4804,CN,National Convergence
+VEN,1997,4804,CN,National Convergence
+VEN,1998,4804,CN,National Convergence
+VEN,1999,1754,MVR,Fifth Republic Movement
+VEN,2000,1754,MVR,Fifth Republic Movement
+VEN,2001,1754,MVR,Fifth Republic Movement
+VEN,2002,1754,MVR,Fifth Republic Movement
+VEN,2003,1754,MVR,Fifth Republic Movement
+VEN,2004,1754,MVR,Fifth Republic Movement
+VEN,2005,1754,MVR,Fifth Republic Movement
+VEN,2006,1754,MVR,Fifth Republic Movement
+VEN,2007,1754,MVR,Fifth Republic Movement
+VEN,2008,1754,MVR,Fifth Republic Movement
+VEN,2009,1754,MVR,Fifth Republic Movement
+VEN,2010,5094,PSUV,United Socialist Party of Venezuela
+VEN,2011,5094,PSUV,United Socialist Party of Venezuela
+VEN,2012,5094,PSUV,United Socialist Party of Venezuela
+VEN,2013,5094,PSUV,United Socialist Party of Venezuela
+VEN,2014,5094,PSUV,United Socialist Party of Venezuela
+VEN,2015,5094,PSUV,United Socialist Party of Venezuela
+VEN,2016,5094,PSUV,United Socialist Party of Venezuela
+VEN,2017,5094,PSUV,United Socialist Party of Venezuela
+VEN,2018,5094,PSUV,United Socialist Party of Venezuela
+VEN,2019,5094,PSUV,United Socialist Party of Venezuela

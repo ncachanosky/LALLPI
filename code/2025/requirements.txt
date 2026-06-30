@@ -1,0 +1,31 @@
+# Requirements for the LALLPI 2025 index-building pipeline (code/2025/).
+#
+# Year-versioned, like config.py: lives in code/2025/ and covers only
+# this vintage's pipeline. A future index version may need different
+# (or additional) packages -- for example, if V-Party stops being
+# available or is replaced as the rhetoric-score source, the loader
+# script and its dependencies could both change. Don't assume this
+# file applies unmodified to a later code/<year>/ pipeline; copy and
+# re-validate it the same way you'd copy config.py.
+#
+# Validated against Python 3.12. Pinned to exact versions rather than
+# ranges, since this pipeline reproduces published, cited numbers --
+# reproducibility matters more here than staying on the latest release.
+# Bump deliberately (and re-validate output against data/2025/output/)
+# rather than letting these float.
+#
+# Install with (from code/2025/):
+#   python3 -m venv venv
+#   source venv/bin/activate          # Windows: venv\Scripts\activate
+#   pip install -r requirements.txt
+
+pandas==3.0.2
+
+# Required even though no script imports it directly -- it's the engine
+# pandas uses under the hood for pd.read_excel()/to_excel() on .xlsx
+# files (Heritage, EFW, and the legacy VParty workbook all need it).
+openpyxl==3.1.5
+
+# NOTE: pd.read_stata() / to_stata() (used for V-Party-2.dta, V-Dem-13.dta,
+# and the final index_2025.dta) are built into pandas itself -- no
+# separate package (e.g. pyreadstat) is needed for .dta files.
