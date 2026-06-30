@@ -1,0 +1,32 @@
+# --- LALLPI pipeline data ---
+# Raw third-party source files (V-Party, V-Dem, Heritage, EFW): not
+# tracked regardless of size -- see README "Raw data sources" for why
+# (licensing/redistribution terms, not just file size) and where to
+# download each one. Applies to every year folder (data/2025/raw/,
+# data/2026/raw/, etc.), not just the current vintage.
+data/*/raw/
+
+# Intermediate pipeline outputs: fully regenerable by rerunning
+# 01-06 in code/<year>/, so there's no reason to track them. Keeping
+# them out of git also means the data/<year>/output/ files are always
+# the actual product of a real pipeline run, not something that could
+# drift from interim/ without anyone noticing.
+data/*/interim/
+
+# data/<year>/countries.csv, data/<year>/vparty_overrides.csv, and
+# data/<year>/output/ are intentionally NOT listed here -- they're
+# hand-maintained or published, and should stay tracked.
+
+# --- Python ---
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# --- Quarto ---
+/.quarto/
+/_site/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
