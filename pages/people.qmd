@@ -1,0 +1,74 @@
+---
+title: "Team"
+---
+
+::: {.team-grid}
+
+::: {.team-member}
+![](images/team_cachanosky.jpg)
+
+### Nicolas Cachanosky
+
+**Director, Center for Free Enterprise**
+
+Associate Professor of Economics and Director of the Center for Free
+Enterprise at The University of Texas at El Paso, Senior Fellow at the
+American Institute of Economic Research (AIER), and Fellow of the UCEMA
+Friedman-Hayek Center for the Study of a Free Society. He also serves as
+Associate Editor of the *Southern Economic Journal*. He is past president
+of the Association of Private Enterprise Education (APEE) and a former
+director of The Mont Pelerin Society (MPS).
+
+[ncachanosky@utep.edu](mailto:ncachanosky@utep.edu) &nbsp;|&nbsp;
+[LinkedIn](https://www.linkedin.com/in/ncachanosky/)
+:::
+
+::: {.team-member}
+![](images/team_bastos.jpg)
+
+### João P. Bastos
+
+**PhD Fellow, Free Market Institute, Texas Tech University**
+
+João Pedro Bastos is a research assistant at the Free Market Institute and
+a Ph.D. student in the Department of Agricultural and Applied Economics at
+Texas Tech University. He has also served as a graduate instructor in the
+Area of Energy Commerce & Business Economics (Rawls College of Business).
+
+He earned his B.A. in Economics at the Universidade Católica do Rio Grande
+do Sul in Brazil, and has worked as a policy analyst for the City of Porto
+Alegre, in both the Executive and Legislative branches, focused on
+modernizing regulations for business. He has also held academic positions
+at several Brazilian think tanks, including Instituto Atlantos, Instituto
+Liberdade, and Instituto Mises Brasil.
+
+His research interests include the political economy of development, with
+special emphasis on the institutional environment of Latin America and the
+impact of populism and corruption on institutions.
+
+[joao-pedro.bastos@ttu.edu](mailto:joao-pedro.bastos@ttu.edu) &nbsp;|&nbsp;
+[LinkedIn](https://www.linkedin.com/in/jpmvbastos/)
+:::
+
+::: {.team-member}
+![](images/team_padilla.jpg)
+
+### Alexandre Padilla
+
+<!-- TODO: confirm whether this should be a project-specific role
+     (e.g. "Research Collaborator") rather than his general title --
+     left as general title for now, easy one-line swap. -->
+**Professor and Chair, Department of Economics, Metropolitan State
+University of Denver**
+
+Professor, Chair of the Economics Department, and Director of the
+Exploring Economic Freedom Project at Metropolitan State University of
+Denver. He obtained his BS, MA, and Doctorate in Economics from the
+University of Law, Economics, and Science of Paul Cézanne Aix-Marseille
+III.
+
+[padilale@msudenver.edu](mailto:padilale@msudenver.edu) &nbsp;|&nbsp;
+[LinkedIn](https://www.linkedin.com/in/alexandre-padilla-20212831/)
+:::
+
+:::

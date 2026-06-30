@@ -1,7 +1,72 @@
 ---
-title: "LALLPI"
+title: ""
 ---
 
-This is a Quarto website.
+```{python}
+#| echo: false
+#| output: asis
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+import pandas as pd
+
+print(
+    '<div style="text-align: center; font-size: 30px; margin-bottom: 1.5em;">'
+    'The <b>Latin American Left-Leaning Populism Index</b> (LALLPI) is a measure '
+    'of active populist regimes in Latin America</div>'
+)
+```
+
+## Populism by country, 2018
+
+```{python}
+#| echo: false
+#| output: asis
+
+# Pulled live from the published index every time this site is built --
+# NOT hand-copied numbers. If this table ever looks out of sync with
+# data/2025/output/index_2025.csv, that means the site needs rebuilding,
+# not that the numbers need editing here.
+df = pd.read_csv("data/2025/output/index_2025.csv")
+
+FEATURED_YEAR = 2018  # matches the year discussed in the Documentation page narrative
+
+year_data = df[(df["YEAR"] == FEATURED_YEAR) & (df["POP"].notna())].copy()
+year_data = year_data.sort_values("POP", ascending=False).reset_index(drop=True)
+
+rows_html = []
+for i, r in year_data.iterrows():
+    rank = i + 1
+    flag_url = f"https://flagcdn.com/w40/{r['ISO2'].lower()}.png"
+    rows_html.append(f"""    <tr>
+      <td><div class="country"><img class="flag" src="{flag_url}" alt="{r['COUNTRY']} flag">{r['COUNTRY']}</div></td>
+      <td>{r['POP']:.1f} ({rank})</td>
+      <td>{r['EP']:.1f}</td>
+      <td>{r['IP']:.1f}</td>
+      <td>{r['POP_R']:.2f}</td>
+    </tr>""")
+
+table_html = f"""<table class="lallpi-ranking">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Overall populism</th>
+      <th>Economic populism</th>
+      <th>Institutional populism</th>
+      <th>Populist rhetoric</th>
+    </tr>
+  </thead>
+  <tbody>
+{chr(10).join(rows_html)}
+  </tbody>
+</table>"""
+
+print(table_html)
+```
+
+[Download the data](databases.qmd){.btn .btn-primary role="button"}
+
+---
+
+::: {.lallpi-footer-logo}
+[![](images/C4FE.png)](https://www.utep.edu/business/c4fe/)
+:::
+

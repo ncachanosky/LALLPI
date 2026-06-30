@@ -30,3 +30,4 @@ venv/
 # --- OS / editor cruft ---
 .DS_Store
 Thumbs.db
+**/*.quarto_ipynb
