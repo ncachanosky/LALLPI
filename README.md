@@ -1,9 +1,6 @@
 # LALLPI -- Latin American Left-Leaning Populism Index
 
-The **Latin American Left-Leaning Populism Index (LALLPI)** measures active
-left-leaning populism in ~21 Latin American countries from 2000 onward, by
-combining populist rhetoric with populist policy outcomes -- rather than
-rhetoric alone.
+The [**Latin American Left-Leaning Populism Index (LALLPI)**](https://lallpi.netlify.app/) measures active left-leaning populism in ~21 Latin American countries from 2000 onward, by combining populist rhetoric with populist policy outcomes -- rather than rhetoric alone.
 
 ```
 POP = POP_R * (EP + IP)
@@ -14,14 +11,9 @@ POP = POP_R * (EP + IP)
 - `IP` (Institutional Populism) -- average of 6 sub-indices, V-Dem + IEF variables, [0, 100].
 - `PEP = POP_R * EP`, `PIP = POP_R * IP`, `POP = (PEP + PIP) / 2`.
 
-Full methodology: see the Documentation page on the project website. **Note:**
-the published documentation currently states `POP = PEP + PIP` (no division)
-and describes a 5-variable `IP`. Both are out of date relative to the actual,
-authoritative code -- the documentation needs updating, not the other way
-around. See "Confirmed discrepancies" below.
+Full methodology: see the Documentation page on the project website.
 
-Authors: Nicolas Cachanosky (UTEP, Center for Free Enterprise), J. P. Bastos
-(Texas Tech, Free Market Institute).
+Authors: Nicolas Cachanosky (The University of Texas at El Paso), J. P. Bastos (University of Austin), and Alexandre Padilla (Metropolitan State University of Denver).
 
 ## Repository layout
 
@@ -71,20 +63,17 @@ step's logic changed.
 ## Raw data sources (not tracked in git)
 
 Place these in `data/2025/raw/` before running the pipeline. They are
-intentionally excluded from version control -- third-party academic
-datasets generally have their own redistribution terms, and `V-Party-2.dta`
-alone is ~46 MB, which doesn't belong in repo history.
+intentionally excluded from version control.
 
-| File | Source | Notes |
-|---|---|---|
+| File            | Source | Notes |
+|-----------------|--------|---|
 | `V-Party-2.dta` | [V-Party Dataset](https://www.v-dem.net/data/v-party-dataset/), V-Dem Institute | Populism (rhetoric) score, `v2xpa_popul`. **This repo's copy is trimmed to ~0.13 MB** (6 columns, LatAm countries, years >= 1990) -- see note 9 below if you need the full original. |
-| `V-Dem-13.dta` | [V-Dem Dataset v13](https://www.v-dem.net/data/the-v-dem-dataset/), V-Dem Institute | Institutional variables |
+| `V-Dem-13.dta`  | [V-Dem Dataset v13](https://www.v-dem.net/data/the-v-dem-dataset/), V-Dem Institute | Institutional variables |
 | `heritage.xlsx` | [Index of Economic Freedom](https://www.heritage.org/index/), Heritage Foundation | Economic freedom sub-indices |
-| `efw.xlsx` | [Economic Freedom of the World](https://www.fraserinstitute.org/economic-freedom/dataset), Fraser Institute | "EFW Ratings 1970-2021" sheet |
+| `efw.xlsx`      | [Economic Freedom of the World](https://www.fraserinstitute.org/economic-freedom/dataset), Fraser Institute | "EFW Ratings 1970-2021" sheet |
 
 Re-download the same release/version used for the current `data/2025/output/`
-files if you need to reproduce them exactly; check with the authors for the
-specific version/date used.
+files if you need to reproduce them exactly.
 
 ## Hand-maintained reference files (tracked in git)
 
@@ -92,99 +81,5 @@ specific version/date used.
 ISO codes, region, and LDC/LLDC/SIDS flags. Edit directly to add/adjust
 coverage.
 
-**`vparty_overrides.csv`** -- for each country-year, which party (a V-Party
-party ID) was actually in government. This is a real human research task,
-not a formality: V-Party scores every active party in a country's system
-each year, not just the governing one, so picking out the right one requires
-external knowledge of who held the presidency. Originally researched by the
-authors and encoded as Excel formulas (`PARTY_GOV` -> `HLOOKUP`) in a legacy
-workbook; extracted into this plain CSV during the 2025 cleanup specifically
-because the formula approach had a serious bug (see below). Extend it by
-adding rows directly, with the format `ISO3, YEAR, PARTY_GOV, PARTY_CODE,
-PARTY_NAME`.
+**`vparty_overrides.csv`** -- for each country-year, which party (a V-Party party ID) was actually in government. This is a real human research task: V-Party scores every active party in a country's system each year, not just the governing one, so identifying the correct one requires external knowledge of who held the presidency. Extend it by adding rows directly, with the format `ISO3, YEAR, PARTY_GOV, PARTY_CODE, PARTY_NAME`.
 
-## Confirmed discrepancies and design decisions
-
-These were identified during the 2025 code cleanup and confirmed with
-Nicolas Cachanosky. Recorded here so they aren't rediscovered (or
-silently re-"fixed") later.
-
-1. **`POP` formula.** The documentation states `POP = PEP + PIP`. The code
-   computes `POP = (PEP + PIP) / 2`. The code is authoritative; **the
-   published documentation page needs updating to match.**
-
-2. **`IP` is a 6-component average, not 5.** The documentation describes 5
-   institutional sub-indices (rule of law, corruption, neopatrimonialism,
-   freedom of expression, property rights). The actual calculation averages
-   6 components: legislative constraints and corruption are each counted
-   twice (once inside the rule-of-law and corruption composites, again as
-   standalone components), and freedom of expression (V-Dem's
-   `v2mecenefm_osp`) is never used at all. This is confirmed as the
-   intended, authoritative calculation -- **not** a bug to fix. The
-   published documentation needs updating to describe 6 components, not 5.
-
-3. **The legacy V-Party Excel workbook had a real data-corruption bug.** Its
-   `INDEX` sheet computed `VPARTY`/`PARTY_CODE`/`PARTY_NAME` via formulas
-   (`HLOOKUP` against the `V-Party` sheet). Pandas/openpyxl cannot
-   recalculate Excel formulas -- so every time the pipeline's own
-   V-Party-sheet export step resaved the workbook, the *cached results* of
-   every formula in the file (including the curated `INDEX` sheet) were
-   silently wiped, with no error. Fixed by replacing the formula chain with
-   `vparty_overrides.csv` (see above), which has no formulas to corrupt.
-
-4. **Merges use left joins onto the full country/year skeleton (1,092
-   rows: ~52 countries x 21 years), not the original's inner joins.** Inner
-   joins silently shrink the dataset at every step with no way to tell which
-   merge dropped which country-year. Left joins keep the full grid through
-   every intermediate step, so gaps show up as visible `NaN` rather than
-   vanished rows.
-
-5. **Final published output filters to country-years with at least one real
-   data point** (`EP`, `IP`, or `POP_R` non-null) -- 524 of the 1,092
-   skeleton rows. The remaining 568 are micro-territories (e.g. Anguilla,
-   the Cayman Islands) that were never really part of this index's
-   coverage. The original script explicitly dropped Suriname and Guyana by
-   name at this stage; both already have zero real data in the current
-   panel, so that drop turns out to be redundant rather than removing real
-   numbers -- not replicated as a separate rule, since the generic filter
-   already covers it. **This may be revisited in a future index version**
-   depending on user feedback (e.g. if partial-coverage countries should be
-   published with explicit gaps rather than omitted).
-
-6. **Aruba's ISO3 code was corrected from `SBW` to `ABW`** (the real ISO
-   3166-1 alpha-3 code) in `countries.csv`. The incorrect code meant Aruba
-   could never match V-Party/V-Dem/EFW data even if it existed. No effect
-   on current published numbers (Aruba has no real coverage from any source
-   either way), but the wrong code would have silently broken any future
-   data source that does cover Aruba.
-
-7. **`index_2025.csv` no longer includes a stray unnamed index column.**
-   The original export omitted `index=False` on `to_csv()`. That column
-   wasn't a documented/cited variable, so it's been dropped as a fix.
-
-8. **`requirements.txt` is year-versioned**, like `config.py` -- it lives in
-   `code/2025/` and covers only this vintage. A future index version may
-   need different dependencies (for example, if V-Party becomes unavailable
-   and is replaced as the rhetoric-score source). Don't assume one
-   `requirements.txt` applies unmodified to a later `code/<year>/` pipeline.
-
-9. **`data/2025/raw/V-Party-2.dta` is a trimmed copy of the original V-Party
-   download**, not the file as published. The original is ~46.7 MB across
-   384 columns; this pipeline only ever uses 6 of them (`country_text_id`,
-   `year`, `v2paid`, `v2paenname`, `v2pashname`, `v2xpa_popul`), filtered to
-   this index's countries and years >= 1990. Trimmed to those columns and
-   that filter, the file is ~0.13 MB -- a 99.7% reduction, with `02_vparty_prepare.py`
-   producing identical output either way (its own filtering step becomes a
-   no-op against the trimmed file). If a future need arises for other
-   V-Party variables or broader country/year coverage, re-download the
-   original from V-Dem and re-trim -- don't assume this copy has everything
-   the published dataset does. Each year's `raw/` is independently curated
-   (see repo layout above), so this decision doesn't carry forward
-   automatically to `code/2026/` and beyond.
-
-## Citing data sources
-
-When describing methodology, cite:
-- **V-Party Dataset** and **V-Dem Dataset**, V-Dem Institute
-- **Index of Economic Freedom**, The Heritage Foundation
-- **Economic Freedom of the World**, Fraser Institute
