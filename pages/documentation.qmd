@@ -1,5 +1,14 @@
 ---
 title: "Documentation"
+filters:
+  - social-share
+share:
+  permalink: "https://lallpi.netlify.app/pages/documentation.html"
+  description: "LALLPI Documentation"
+  twitter: true
+  facebook: true
+  linkedin: true
+  email: true
 ---
 
 ## Conceptualization
@@ -153,8 +162,9 @@ centrist Cambiemos coalition in government at the time.
 import sys
 sys.path.insert(0, ".")
 import _site_helpers
+from IPython.display import HTML, display
 
-print(_site_helpers.build_ranking_table_html("data/2025/output/index_2025.csv", 2018))
+display(HTML(_site_helpers.build_ranking_table_html("data/2025/output/index_2025.csv", 2018)))
 ```
 
 Because policy scores run from 0 (less populist) to 100 (more populist) and
@@ -192,8 +202,9 @@ ax.set_xlim(lims)
 ax.set_ylim(lims)
 ax.set_xlabel("Economic Populism (PEP)")
 ax.set_ylabel("Institutional Populism (PIP)")
-ax.legend(loc="upper left")
+ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=1, frameon=False)
 fig.tight_layout()
+fig.subplots_adjust(bottom=0.15)
 plt.show()
 ```
 
@@ -234,8 +245,9 @@ ax.set_xlabel("Year")
 ax.set_ylabel("Regional average")
 ax.set_ylim(bottom=0)
 ax.xaxis.set_major_locator(MaxNLocator(integer=True))
-ax.legend(loc="upper left")
+ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=3, frameon=False)
 fig.tight_layout()
+fig.subplots_adjust(bottom=0.22)
 plt.show()
 ```
 
@@ -268,6 +280,8 @@ affiliation (an "independent"), for whom V-Party has no data.
 comparable to each other. Each can move independently of the other, so a
 given value does not by itself indicate whether a regime's populism is more
 economic or more institutional in character.
+
+## Report a bug or submit a recommendation
 
 Found an error in the methodology, or have a suggestion? [Report it on
 GitHub](https://github.com/ncachanosky/LALLPI/issues).

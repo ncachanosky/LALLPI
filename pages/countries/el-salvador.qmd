@@ -1,0 +1,86 @@
+---
+title: "El Salvador"
+---
+
+<a href="/pages/data.qmd">&larr; All countries</a>
+
+```{python}
+#| echo: false
+#| output: asis
+
+import sys
+sys.path.insert(0, ".")
+import pandas as pd
+from IPython.display import HTML, display
+import _site_helpers as sh
+
+df = pd.read_csv("data/2025/output/index_2025.csv")
+s = sh.country_summary(df, "SLV")
+
+display(HTML(f"""
+<div style="display:flex; align-items:center; gap:16px; margin: 1.5em 0;">
+  <img src="https://flagcdn.com/w80/{s['iso2'].lower()}.png" alt="{s['country']} flag" style="border-radius:4px;">
+  <div>
+    <h2 style="margin:0;">{s['country']}</h2>
+    <p style="margin:0; color:var(--utep-silver, #666);">{s['region']} &middot; data available {s['first_year']}-{s['last_year']} ({s['n_years']} years)</p>
+  </div>
+</div>
+<div class="lallpi-stat-row">
+  <div><span class="stat-value">{s['pop']:.1f}</span><span class="stat-label">POP ({s['year']})</span></div>
+  <div><span class="stat-value">#{s['rank']}</span><span class="stat-label">of {s['n_countries']} countries, {s['year']}</span></div>
+  <div><span class="stat-value">{s['percentile']*100:.0f}<sup>th</sup></span><span class="stat-label">percentile, {s['year']}</span></div>
+</div>
+"""))
+```
+
+## Score over time
+
+```{python}
+#| echo: false
+#| label: fig-el-salvador-trend
+#| fig-cap: "El Salvador: POP, PEP, and PIP by year"
+
+import matplotlib.pyplot as plt
+
+fig = sh.build_country_trend_chart(df, "SLV")
+plt.show()
+```
+
+## What's driving the score
+
+Latest-year breakdown of the six Institutional Populism components and
+four Economic Populism components -- see
+[Documentation](/pages/documentation.qmd) for what each one measures.
+
+```{python}
+#| echo: false
+#| label: fig-el-salvador-breakdown
+#| fig-cap: "El Salvador: sub-index components, latest year"
+
+fig = sh.build_subindex_breakdown_chart(df, "SLV")
+plt.show()
+```
+
+## El Salvador vs. the regional average
+
+```{python}
+#| echo: false
+#| label: fig-el-salvador-regional
+#| fig-cap: "El Salvador vs. regional average POP"
+
+fig = sh.build_regional_comparison_chart(df, "SLV")
+plt.show()
+```
+
+## Governing party by year
+
+The populist rhetoric score (`POP_R`) is specific to whichever party
+governed that year -- see [Documentation](/pages/documentation.qmd) for
+how this is determined.
+
+```{python}
+#| echo: false
+#| output: asis
+
+display(HTML(sh.build_party_history_table_html(df, "SLV")))
+```

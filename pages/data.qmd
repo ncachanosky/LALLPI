@@ -57,7 +57,7 @@ box. This is available so that anyone can:
 
 [View on GitHub](https://github.com/ncachanosky/LALLPI){.btn .btn-primary role="button"}
 
-## Report a bug or recommendation
+## Report a bug or submit a recommendation
 
 Found an error in the methodology, or have a suggestion? [Report it on
 GitHub](https://github.com/ncachanosky/LALLPI/issues).

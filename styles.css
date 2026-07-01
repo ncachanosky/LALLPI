@@ -242,3 +242,31 @@ li i.fa-solid.fa-file {
   margin-right: 0.4em;
   text-align: center;
 }
+/* Country page stat row (pages/countries/*.qmd) */
+
+.lallpi-stat-row {
+  display: flex;
+  gap: 12px;
+  margin: 1.5em 0;
+}
+
+.lallpi-stat-row > div {
+  background: #F2F2F2;
+  border-radius: 6px;
+  padding: 12px 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.lallpi-stat-row .stat-value {
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--utep-orange);
+}
+
+.lallpi-stat-row .stat-label {
+  display: block;
+  font-size: 12px;
+  color: var(--utep-blue);
+}

@@ -8,6 +8,10 @@ title: ""
 LALLPI tracks active left-leaning populism across ~21 Latin American countries since 2000, combining populist rhetoric with the economic and institutional policies typically associated with populist governance. Unlike indices that measure rhetoric alone, this lets the index distinguish leaders who talk populist from those who govern that way.
 </div>
 
+<div style="text-align: center">
+[Download the flyer](/images/lallpi-flyer.png){.btn .btn-primary role="button"}
+</div>
+
 ---
 
 ```{python}
@@ -15,11 +19,12 @@ LALLPI tracks active left-leaning populism across ~21 Latin American countries s
 #| output: asis
 
 import pandas as pd
+from IPython.display import HTML, display
 
-print(
+display(HTML(
     '<div style="text-align: center; font-size: 20px; margin-bottom: 1.0em;">'
     '2018</div>'
-)
+))
 ```
 
 ```{python}
@@ -29,6 +34,7 @@ print(
 import sys
 sys.path.insert(0, ".")
 import _site_helpers
+from IPython.display import HTML, display
 
 # Pulled live from the published index every time this site is built --
 # NOT hand-copied numbers. If this table ever looks out of sync with
@@ -37,7 +43,7 @@ import _site_helpers
 # page via _site_helpers.py so the two can't drift out of sync.
 FEATURED_YEAR = 2018  # matches the year discussed in the Documentation page narrative
 
-print(_site_helpers.build_ranking_table_html("data/2025/output/index_2025.csv", FEATURED_YEAR))
+display(HTML(_site_helpers.build_ranking_table_html("data/2025/output/index_2025.csv", FEATURED_YEAR)))
 ```
 
 [Download the data](/pages/data.qmd){.btn .btn-primary role="button"}
