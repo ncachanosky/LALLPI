@@ -8,7 +8,7 @@
         "title: \"\"\n",
         "---"
       ],
-      "id": "3c0f6de6"
+      "id": "e29aa2fa"
     },
     {
       "cell_type": "code",
@@ -25,7 +25,7 @@
         "    'of active populist regimes in Latin America</div>'\n",
         ")"
       ],
-      "id": "71833f05",
+      "id": "eee92a42",
       "execution_count": null,
       "outputs": []
     },
@@ -35,7 +35,7 @@
       "source": [
         "## Populism by country, 2018"
       ],
-      "id": "a161ab8f"
+      "id": "9fc97c9e"
     },
     {
       "cell_type": "code",
@@ -84,7 +84,7 @@
         "\n",
         "print(table_html)"
       ],
-      "id": "25d1fdca",
+      "id": "44443d14",
       "execution_count": null,
       "outputs": []
     },
@@ -100,7 +100,7 @@
         "[![](/images/C4FE.png)](https://www.utep.edu/business/c4fe/)\n",
         ":::\n"
       ],
-      "id": "912f91a0"
+      "id": "f4228f09"
     }
   ],
   "metadata": {

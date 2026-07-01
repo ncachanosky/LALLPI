@@ -1,5 +1,6 @@
 project:
   type: website
+  execute-dir: project
 
 website:
   title: "LALLPI"
@@ -17,6 +18,6 @@ format:
       - brand
     css: styles.css
     toc: true
-
-
-
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">

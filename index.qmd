@@ -15,8 +15,6 @@ print(
 )
 ```
 
-## Populism by country, 2018
-
 ```{python}
 #| echo: false
 #| output: asis
@@ -47,7 +45,7 @@ for i, r in year_data.iterrows():
 table_html = f"""<table class="lallpi-ranking">
   <thead>
     <tr>
-      <th>Country</th>
+      <th>Country (2018)</th>
       <th>Overall populism</th>
       <th>Economic populism</th>
       <th>Institutional populism</th>
@@ -62,11 +60,11 @@ table_html = f"""<table class="lallpi-ranking">
 print(table_html)
 ```
 
-[Download the data](databases.qmd){.btn .btn-primary role="button"}
+[Download the data](/pages/databases.qmd){.btn .btn-primary role="button"}
 
 ---
 
 ::: {.lallpi-footer-logo}
-[![](images/C4FE.png)](https://www.utep.edu/business/c4fe/)
+[![](/images/C4FE.png)](https://www.utep.edu/business/c4fe/)
 :::
 
