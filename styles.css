@@ -86,6 +86,24 @@ a:hover {
   color: var(--utep-orange) !important;
 }
 
+/* ---- Footer ---- */
+
+.page-footer,
+.page-footer a,
+.page-footer i,
+.page-footer svg,
+.page-footer .bi {
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+}
+
+.page-footer a:hover,
+.page-footer a:hover i,
+.page-footer a:hover svg {
+  color: var(--utep-orange) !important;
+  fill: var(--utep-orange) !important;
+}
+
 /* ---- Minimalist spacing ---- */
 
 .content {

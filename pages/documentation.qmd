@@ -57,6 +57,11 @@ the same underlying data (@tbl-scenarios):
 
 ## Estimation
 
+Every calculation described below is implemented in full in the project's
+open-source pipeline -- see the [Data](/pages/data.qmd) page to browse the
+code and verify any step directly, rather than relying on this description
+alone.
+
 The rhetoric measure (`POP_R`) is V-Party's Populism Index, ranging from 0
 (less populist) to 1 (more populist). It is the harmonic mean of
 "anti-elitism" and "people-centrism," and captures how much a political
@@ -130,7 +135,7 @@ variables commonly observed in populist regimes.
 : Institutional Populism (IP) variable sources {#tbl-ip-sources}
 
 
-![Index structure](/images/index_structure.svg){#fig-structure}
+![Index structure](/images/index_structure.png){#fig-structure width=70%}
 
 ## Results and selected data
 
@@ -169,19 +174,25 @@ feed each sub-index.
 
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
+import sys
+sys.path.insert(0, ".")
+import _site_helpers
+
+_site_helpers.apply_chart_style()
 
 df = pd.read_csv("data/2025/output/index_2025.csv")
 d = df.dropna(subset=["PEP", "PIP"])
 
 fig, ax = plt.subplots(figsize=(7, 6))
-ax.scatter(d["PEP"], d["PIP"], color="#FF8200", alpha=0.6, edgecolor="#041E42", linewidth=0.4)
+ax.scatter(d["PEP"], d["PIP"], color="#FF8200", alpha=0.65, edgecolor="#041E42", linewidth=0.4, s=35)
 lims = [0, max(d["PEP"].max(), d["PIP"].max()) * 1.05]
 ax.plot(lims, lims, linestyle="--", color="#041E42", linewidth=1, label="PEP = PIP")
 ax.set_xlim(lims)
 ax.set_ylim(lims)
 ax.set_xlabel("Economic Populism (PEP)")
 ax.set_ylabel("Institutional Populism (PIP)")
-ax.legend()
+ax.legend(loc="upper left")
 fig.tight_layout()
 plt.show()
 ```
@@ -202,7 +213,8 @@ fig, ax = plt.subplots(figsize=(8, 4.5))
 ax.plot(yearly.index, yearly.values, color="#FF8200", linewidth=2, marker="o", markersize=4)
 ax.set_xlabel("Year")
 ax.set_ylabel("Average POP")
-ax.grid(axis="y", alpha=0.3)
+ax.set_ylim(bottom=0)
+ax.xaxis.set_major_locator(MaxNLocator(integer=True))
 fig.tight_layout()
 plt.show()
 ```
@@ -220,8 +232,9 @@ ax.plot(yearly3.index, yearly3["PIP"], color="#FF8200", linewidth=2, marker="o",
 ax.plot(yearly3.index, yearly3["PEP"], color="#B1B3B3", linewidth=2, marker="o", markersize=4, label="PEP (economic)")
 ax.set_xlabel("Year")
 ax.set_ylabel("Regional average")
-ax.grid(axis="y", alpha=0.3)
-ax.legend()
+ax.set_ylim(bottom=0)
+ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+ax.legend(loc="upper left")
 fig.tight_layout()
 plt.show()
 ```
@@ -256,6 +269,9 @@ comparable to each other. Each can move independently of the other, so a
 given value does not by itself indicate whether a regime's populism is more
 economic or more institutional in character.
 
+Found an error in the methodology, or have a suggestion? [Report it on
+GitHub](https://github.com/ncachanosky/LALLPI/issues).
+
 ---
 
-![](/images/favicon.png){fig-align=center width=150px}
+![](/images/favicon.svg){fig-align=center width=150px}

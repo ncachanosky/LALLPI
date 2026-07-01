@@ -55,4 +55,5 @@ Chair and Professor
 :::
 :::
 
-![](\images\favicon.svg){fig-align=center width=150px}
+
+![](/images/favicon.svg){fig-align=center width=150px}

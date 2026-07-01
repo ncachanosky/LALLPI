@@ -51,3 +51,42 @@ def build_ranking_table_html(index_csv_path: str, year: int) -> str:
 {chr(10).join(rows_html)}
   </tbody>
 </table>"""
+
+
+def apply_chart_style():
+    """Shared matplotlib styling for all documentation-page charts.
+
+    Academic/professional look: open axes (no top/right spines),
+    light y-gridlines only, no legend frame, consistent sizing.
+    Called once per chart chunk rather than duplicating these settings
+    three times -- keeps the charts from drifting out of sync with
+    each other as the site evolves.
+
+    Uses a generic sans-serif font rather than forcing Roboto Condensed:
+    matplotlib needs the font file actually installed on whatever
+    machine renders the site, which can't be verified here, and a
+    silent fallback or build error is worse than a slightly plainer
+    (but reliable) font.
+    """
+    import matplotlib.pyplot as plt
+
+    plt.rcParams.update({
+        "font.family": "sans-serif",
+        "font.size": 11,
+        "axes.titlesize": 12,
+        "axes.labelsize": 11,
+        "axes.edgecolor": "#041E42",
+        "axes.linewidth": 0.8,
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "axes.grid": True,
+        "axes.grid.axis": "y",
+        "grid.color": "#B1B3B3",
+        "grid.alpha": 0.3,
+        "grid.linewidth": 0.6,
+        "legend.frameon": False,
+        "xtick.color": "#041E42",
+        "ytick.color": "#041E42",
+        "text.color": "#041E42",
+        "axes.labelcolor": "#041E42",
+    })

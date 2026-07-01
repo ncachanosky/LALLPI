@@ -5,8 +5,7 @@ title: "Data"
 ## 2025 Version
 
 - **Release date:** April, 2025
-- **Version:** 1
-- **License/citation:** see [Documentation](/pages/documentation.qmd)
+- **Version:** v1
 
 ```{python}
 #| echo: false
@@ -41,13 +40,28 @@ presidents not affiliated with a political party covered by V-Party.
 
 - [Download missing-observations report (.xlsx)](/data/2025/output/missing_data_2025.xlsx)
 
-### Code and data pipeline
+### Open source
 
-The full index-building pipeline -- code, methodology notes, and version
-history -- is available on GitHub:
+LALLPI is an open-source project. Every step of the index -- from the raw
+V-Party, V-Dem, Heritage, and EFW source data through to the published
+`index_2025.csv` -- is implemented in publicly available code, not a black
+box. This is available so that anyone can:
+
+- **Verify the calculation.** Every formula described on the
+  [Documentation](/pages/documentation.qmd) page is implemented exactly as
+  written in the pipeline scripts -- step through the code and confirm the
+  published numbers directly, rather than taking the methodology
+  description on faith.
+- **Reuse or adapt it.** Fork the repository, extend it to new countries or
+  years, or build your own index on the same pipeline structure.
 
 [View on GitHub](https://github.com/ncachanosky/LALLPI){.btn .btn-primary role="button"}
 
+## Report a bug or recommendation
+
+Found an error in the methodology, or have a suggestion? [Report it on
+GitHub](https://github.com/ncachanosky/LALLPI/issues).
+
 ---
 
-![](/images/favicon.png){fig-align=center width=150px}
+![](/images/favicon.svg){fig-align=center width=150px}
