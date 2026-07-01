@@ -8,7 +8,8 @@ title: "Team"
 ::: {.team-info}
 ### Nicolas Cachanosky
 
-Center for Free Enterprise, The University of Texas at El Paso \
+The University of Texas at El Paso \
+Center for Free Enterprise \
 Director
 
 <!-- TODO: add X handle, replace href="#" below -->
@@ -42,11 +43,9 @@ Assistant Professor of Economics
 ::: {.team-info}
 ### Alexandre Padilla
 
-<!-- TODO: confirm whether this should be a project-specific role
-     (e.g. "Research Collaborator") rather than his general title --
-     left as general title for now, easy one-line swap. -->
-Department of Economics, Metropolitan State University of Denver \
-Professor and Chair
+Metropolitan State University of Denver \
+Department of Economics \
+Chair and Professor
 
 <!-- TODO: add X handle, replace href="#" below -->
 [<i class="fa-solid fa-globe"></i>](https://www.alexandrepadilla.com// "Website")
@@ -55,7 +54,5 @@ Professor and Chair
 [<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/alexandre-padilla-20212831/ "LinkedIn")
 :::
 :::
-
----
 
 ![](/images/favicon.png){fig-align=center width=150px}

@@ -38,6 +38,8 @@ figcaption,
 .quarto-figure figcaption {
   text-align: center;
 }
+
+/* Default content tables (documentation.qmd, etc.) -- forces a shared
    width so consecutive tables with different column counts/content
    still line up on the same left/right edges, instead of each one
    auto-sizing to its own content width. Multiple selectors since the
