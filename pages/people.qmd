@@ -55,3 +55,7 @@ Professor and Chair
 [<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/alexandre-padilla-20212831/ "LinkedIn")
 :::
 :::
+
+---
+
+![](/images/favicon.png){fig-align=center width=150px}

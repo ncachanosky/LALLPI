@@ -42,9 +42,7 @@ $$
 By pairing populist policy with populist rhetoric, the index distinguishes
 non-populist regimes that happen to implement populist-style policy from
 populist regimes that do not. This supports several distinct readings of
-the same underlying data (Table 1):
-
-Table 1. Latin American Left-Leaning Populist Index scenarios
+the same underlying data (@tbl-scenarios):
 
 | Scenario                                         | Index value                        |
 | ------------------------------------------------ | ----------------------------------- |
@@ -54,6 +52,8 @@ Table 1. Latin American Left-Leaning Populist Index scenarios
 | Non-active populism                              | High *POP_R* and low *EP* and *IP*  |
 | Populist economic policies by non-populists      | Low *POP_R* and high *IP*           |
 | Populist institutional policies by non-populists | Low *POP_R* and high *EP*           |
+
+: Latin American Left-Leaning Populist Index scenarios {#tbl-scenarios}
 
 ## Estimation
 
@@ -71,13 +71,15 @@ Missing years are interpolated where possible.
 **Economic Populism** is the simple average of four policy variables, each
 itself drawn from more than one source.
 
-| Definition                             | Term   | Inputs                                          |
-| --------------------------------------- | ------ | ------------------------------------------------ |
-| **Economic populism**                   | $EP$   | $EP = \dfrac{EP_1 + EP_2 + EP_3 + EP_4}{4}$       |
-| Business and labor market regulations   | $EP_1$ | $EP_1 = \dfrac{EP_{11} + EP_{12} + EP_{13}}{3}$   |
-| Government interference                 | $EP_2$ | $EP_2 = \dfrac{EP_{21} + EP_{22}}{2}$             |
-| Monetary and financial freedom          | $EP_3$ | $EP_3 = \dfrac{EP_{31} + EP_{32} + EP_{33}}{3}$   |
-| Freedom to trade                        | $EP_4$ | $EP_4 = \dfrac{EP_{41} + EP_{42}}{2}$             |
+| Definition                             | Inputs                                   |
+| :------------------------------------- | :--------------------------------------- |
+| **Economic populism**                  | $EP = (EP_1 + EP_2 + EP_3 + EP_4)/4$     |
+| Business and labor market regulations  | $EP_1 = (EP_{11} + EP_{12} + EP_{13})/3$ |
+| Government interference                | $EP_2 = (EP_{21} + EP_{22})/2$           |
+| Monetary and financial freedom         | $EP_3 = (EP_{31} + EP_{32} + EP_{33})/3$ |
+| Freedom to trade                       | $EP_4 = (EP_{41} + EP_{42})/2$           |
+
+: Economic Populism (EP) components {#tbl-ep-components}
 
 The next table lists the source, variable name, and variable code for each
 input to `EP` (IEF: Heritage Foundation's *Index of Economic Freedom*; EFW:
@@ -96,42 +98,39 @@ Fraser Institute's *Economic Freedom of the World*).
 | $EP_{41}$  | IEF    | Trade freedom                        | `Trade freedom`       |
 | $EP_{42}$  | EFW    | Freedom to trade internationally     | `4`                   |
 
+: Economic Populism (EP) variable sources {#tbl-ep-sources}
+
 **Institutional Populism** is the simple average of six institutional
 variables commonly observed in populist regimes.
 
-| Definition                | Term   | Inputs                                                        |
-| -------------------------- | ------ | --------------------------------------------------------------- |
-| **Institutional populism** | $IP$   | $IP = \dfrac{IP_1 + IP_2 + IP_3 + IP_4 + IP_5 + IP_6}{6}$        |
-| Rule of law                | $IP_1$ | $IP_1 = \dfrac{IP_{11} + IP_{12} + IP_{13}}{3}$                  |
-| Corruption                 | $IP_2$ | $IP_2 = \dfrac{IP_{21} + IP_{22}}{2}$                            |
-| Legislative constraints    | $IP_3$ | $IP_3 = IP_{31}$                                                 |
-| Corruption                 | $IP_4$ | $IP_4 = IP_{41}$                                                 |
-| Neopatrimonialism          | $IP_5$ | $IP_5 = IP_{51}$                                                 |
-| Property rights            | $IP_6$ | $IP_6 = IP_{61}$                                                 |
+| Definition                 | Inputs                                              |
+| :------------------------- | :---------------------------------------------------|
+| **Institutional populism** | $IP = (IP_1 + IP_2 + IP_3 + IP_4 + IP_5 + IP_6)/6$ |
+| Rule of law                | $IP_1 = (IP_{11} + IP_{12} + IP_{13})/3$            |
+| Corruption                 | $IP_2 = (IP_{21} + IP_{22})/2$                      |
+| Legislative constraints    | $IP_3 = IP_{31}$                                    |
+| Corruption                 | $IP_4 = IP_{41}$                                    |
+| Neopatrimonialism          | $IP_5 = IP_{51}$                                    |
+| Property rights            | $IP_6 = IP_{61}$                                    |
 
-| Sub-index  | Source | Variable                                 | Variable code           |
-| ---------- | ------ | ------------------------------------------ | ------------------------ |
-| $IP_{11}$  | V-Dem  | Rule of law                                | `v2x_rule`                |
-| $IP_{12}$  | V-Dem  | Judiciary constraints on the executive     | `v2x_jucon`                |
-| $IP_{13}$  | V-Dem  | Legislative constraints on the executive   | `v2xlg_legcon`             |
-| $IP_{21}$  | V-Dem  | Corruption                                 | `v2x_execorr`               |
-| $IP_{22}$  | IEF    | Government integrity                       | `Government integrity`       |
-| $IP_{31}$  | V-Dem  | Legislative constraints on the executive   | `v2xlg_legcon`             |
-| $IP_{41}$  | V-Dem  | Corruption                                 | `v2x_execorr`               |
-| $IP_{51}$  | V-Dem  | Neopatrimonialism                          | `v2x_neopat`                |
-| $IP_{61}$  | IEF    | Property rights                            | `Property rights`            |
+: Institutional Populism (IP) components {#tbl-ip-components}
 
-**Note:** `IP_3` (legislative constraints) and `IP_4` (corruption) repeat
-variables already used inside `IP_1` and `IP_2` respectively, so those two
-dimensions carry roughly twice the weight of the others in the
-six-component average. V-Dem's freedom-of-expression variable
-(`v2mecenefm_osp`) is not currently part of `IP`, despite being a natural
-candidate for a populism-relevant institutional measure. This reflects the
-calculation exactly as published in the current index version, not an
-error in this documentation -- revisiting the weighting is a candidate for
-a future version of the index.
+| Sub-index  | Source | Variable                                  | Variable code          |
+| ---------- | ------ | ----------------------------------------- | ---------------------- |
+| $IP_{11}$  | V-Dem  | Rule of law                               | `v2x_rule`             |
+| $IP_{12}$  | V-Dem  | Judiciary constraints on the executive    | `v2x_jucon`            |
+| $IP_{13}$  | V-Dem  | Legislative constraints on the executive  | `v2xlg_legcon`         |
+| $IP_{21}$  | V-Dem  | Corruption                                | `v2x_execorr`          |
+| $IP_{22}$  | IEF    | Government integrity                      | `Government integrity` |
+| $IP_{31}$  | V-Dem  | Legislative constraints on the executive  | `v2xlg_legcon`         |
+| $IP_{41}$  | V-Dem  | Corruption                                | `v2x_execorr`          |
+| $IP_{51}$  | V-Dem  | Neopatrimonialism                         | `v2x_neopat`           |
+| $IP_{61}$  | IEF    | Property rights                           | `Property rights`      |
 
-![Figure 1. Index structure](/images/index_structure.svg)
+: Institutional Populism (IP) variable sources {#tbl-ip-sources}
+
+
+![Index structure](/images/index_structure.svg){#fig-structure}
 
 ## Results and selected data
 
@@ -159,14 +158,14 @@ absolute terms -- visible in the gap between Venezuela and Bolivia, the
 next-ranked country.
 
 Populist regimes tend to score higher on Institutional Populism (`PIP`)
-than on Economic Populism (`PEP`) (Figure 2), across the full 2000-2020
+than on Economic Populism (`PEP`) (@fig-scatter), across the full 2000-2020
 panel and not just in 2018. This may reflect which underlying variables
 feed each sub-index.
 
 ```{python}
 #| echo: false
 #| label: fig-scatter
-#| fig-cap: "Figure 2. Economic vs. Institutional Populism, all country-years"
+#| fig-cap: "Economic vs. Institutional Populism, all country-years"
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -256,3 +255,7 @@ affiliation (an "independent"), for whom V-Party has no data.
 comparable to each other. Each can move independently of the other, so a
 given value does not by itself indicate whether a regime's populism is more
 economic or more institutional in character.
+
+---
+
+![](/images/favicon.png){fig-align=center width=150px}

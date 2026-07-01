@@ -1,0 +1,32 @@
+meta:
+  name: LALLPI
+
+color:
+  palette:
+    utep-orange: "#FF8200"
+    utep-blue: "#041E42"
+    utep-silver: "#B1B3B3"
+  foreground: utep-blue
+  background: "#FFFFFF"
+  primary: utep-orange
+  secondary: utep-blue
+  link: utep-orange
+
+typography:
+  fonts:
+    - family: Inter
+      source: google
+    - family: Roboto Condensed
+      source: google
+  base:
+    family: Inter
+  headings:
+    family: Roboto Condensed
+    weight: 700
+  link:
+    decoration: none
+
+logo:
+  small: images/lallpi-logo.svg
+  medium: images/lallpi-logo.svg
+  large: images/lallpi-logo.svg

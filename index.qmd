@@ -2,6 +2,14 @@
 title: ""
 ---
 
+![](/images/favicon.png){fig-align=center width=150px}
+
+<div style="text-align: justify; font-size: 20px">
+LALLPI tracks active left-leaning populism across ~21 Latin American countries since 2000, combining populist rhetoric with the economic and institutional policies typically associated with populist governance. Unlike indices that measure rhetoric alone, this lets the index distinguish leaders who talk populist from those who govern that way.
+</div>
+
+---
+
 ```{python}
 #| echo: false
 #| output: asis
@@ -9,13 +17,10 @@ title: ""
 import pandas as pd
 
 print(
-    '<div style="text-align: center; font-size: 30px; margin-bottom: 1.5em;">'
-    'The <b>Latin American Left-Leaning Populism Index</b> (LALLPI) is a measure '
-    'of active populist regimes in Latin America</div>'
+    '<div style="text-align: center; font-size: 20px; margin-bottom: 1.0em;">'
+    '2018</div>'
 )
 ```
-
-## Populism by country, 2018
 
 ```{python}
 #| echo: false
@@ -35,7 +40,9 @@ FEATURED_YEAR = 2018  # matches the year discussed in the Documentation page nar
 print(_site_helpers.build_ranking_table_html("data/2025/output/index_2025.csv", FEATURED_YEAR))
 ```
 
-[Download the data](/pages/databases.qmd){.btn .btn-primary role="button"}
+[Download the data](/pages/data.qmd){.btn .btn-primary role="button"}
+
+---
 
 ::: {.lallpi-footer-logo}
 [![](/images/C4FE.png)](https://www.utep.edu/business/c4fe/)

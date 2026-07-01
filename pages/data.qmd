@@ -48,3 +48,6 @@ history -- is available on GitHub:
 
 [View on GitHub](https://github.com/ncachanosky/LALLPI){.btn .btn-primary role="button"}
 
+---
+
+![](/images/favicon.png){fig-align=center width=150px}
