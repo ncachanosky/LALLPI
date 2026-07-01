@@ -27,6 +27,6 @@ typography:
     decoration: none
 
 logo:
-  small: images/lallpi-logo.svg
-  medium: images/lallpi-logo.svg
-  large: images/lallpi-logo.svg
+  small: images/favicon.svg
+  medium: images/favicon.svg
+  large: images/favicon.svg

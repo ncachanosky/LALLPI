@@ -2,7 +2,7 @@
 title: ""
 ---
 
-![](/images/favicon.png){fig-align=center width=150px}
+![](/images/favicon.svg){fig-align=center width=150px}
 
 <div style="text-align: justify; font-size: 20px">
 LALLPI tracks active left-leaning populism across ~21 Latin American countries since 2000, combining populist rhetoric with the economic and institutional policies typically associated with populist governance. Unlike indices that measure rhetoric alone, this lets the index distinguish leaders who talk populist from those who govern that way.

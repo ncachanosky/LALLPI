@@ -3,7 +3,7 @@ title: "Team"
 ---
 
 ::: {.team-row}
-![](\images\team_cachanosky.jpg){width=125px}
+![](/images/team_cachanosky.jpg){width=125px}
 
 ::: {.team-info}
 ### Nicolas Cachanosky
@@ -21,7 +21,7 @@ Director
 :::
 
 ::: {.team-row}
-![](\images\team_bastos.jpg){width=125px}
+![](/images/team_bastos.jpg){width=125px}
 
 ::: {.team-info}
 ### João P. Bastos
@@ -38,7 +38,7 @@ Assistant Professor of Economics
 :::
 
 ::: {.team-row}
-![](\images\team_padilla.jpg){width=125px}
+![](/images/team_padilla.jpg){width=125px}
 
 ::: {.team-info}
 ### Alexandre Padilla
@@ -55,4 +55,4 @@ Chair and Professor
 :::
 :::
 
-![](/images/favicon.png){fig-align=center width=150px}
+![](\images\favicon.svg){fig-align=center width=150px}
