@@ -1,0 +1,12 @@
+# Python dependencies for RENDERING THE SITE (quarto render), not for
+# running the index-building pipeline -- see code/2025/requirements.txt
+# for that. This file covers what the .qmd Python code chunks need:
+# the live ranking tables (index.qmd, pages/documentation.qmd) and the
+# matplotlib charts (pages/documentation.qmd).
+#
+# Quarto executes {python} chunks via Jupyter, so jupyter itself is
+# required even though no .qmd file imports it directly.
+
+jupyter==1.1.1
+pandas==3.0.2
+matplotlib==3.10.8

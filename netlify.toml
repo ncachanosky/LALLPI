@@ -1,0 +1,30 @@
+# Netlify build configuration for the LALLPI Quarto site.
+#
+# Netlify's build image does not include the Quarto CLI, and its default
+# Python does not include Jupyter/pandas/matplotlib -- both are installed
+# explicitly below before rendering. This is a deliberate choice over
+# Quarto's official Netlify Build Plugin (quarto-dev/netlify-plugin-quarto):
+# that plugin's execution environment cannot run Python code, and this site
+# genuinely needs to (the live ranking tables and charts read
+# data/2025/output/index_2025.csv and matplotlib-render figures at build
+# time -- see index.qmd and pages/documentation.qmd). Pre-rendering locally
+# and committing a Quarto "freeze" cache was the alternative, but that
+# reintroduces the exact staleness risk this project spent significant
+# effort eliminating (see README): the live site would only update when
+# someone remembers to re-render and commit locally, rather than always
+# reflecting whatever is actually in data/2025/output/ at build time.
+
+[build]
+  publish = "_site"
+  command = """
+    set -e
+    QUARTO_VERSION=1.9.38
+    curl -LO "https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
+    tar -xzf "quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
+    export PATH="$PATH:$PWD/quarto-${QUARTO_VERSION}/bin"
+    pip install -r requirements-site.txt
+    quarto render
+  """
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
