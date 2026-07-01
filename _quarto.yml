@@ -8,6 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: pages/documentation.qmd
+        text: Documentation
+      - href: pages/data.qmd
+        text: Data
       - href: pages/people.qmd
         text: Team
 

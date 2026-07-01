@@ -1,57 +1,50 @@
 ---
-title: "Team"
+title: "Data"
 ---
 
-::: {.team-row}
-![](\images\team_cachanosky.jpg){width=125px}
+## 2025 Version
 
-::: {.team-info}
-### Nicolas Cachanosky
+- **Release date:** April, 2025
+- **Version:** 1
+- **License/citation:** see [Documentation](/pages/documentation.qmd)
 
-Center for Free Enterprise, The University of Texas at El Paso \
-Director
+```{python}
+#| echo: false
+#| output: asis
 
-<!-- TODO: add X handle, replace href="#" below -->
-[<i class="fa-solid fa-globe"></i>](https://www.ncachanosky.com/ "Website")
-[<i class="fa-solid fa-envelope"></i>](mailto:ncachanosky@utep.edu "Email")
-[<i class="fa-brands fa-x-twitter"></i>](https://x.com/n_cachanosky "X")
-[<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/ncachanosky/ "LinkedIn")
-:::
-:::
+# Pulled live from the published index -- see index.qmd for why this
+# matters (the old site's "21 countries, 2002-2019" text had gone
+# stale relative to the actual data).
+import pandas as pd
 
-::: {.team-row}
-![](\images\team_bastos.jpg){width=125px}
+df = pd.read_csv("data/2025/output/index_2025.csv")
+n_countries = df["ISO3"].nunique()
+year_min, year_max = df["YEAR"].min(), df["YEAR"].max()
 
-::: {.team-info}
-### João P. Bastos
+print(f"- **Countries covered:** {n_countries}")
+print(f"- **Years covered:** {year_min}-{year_max}")
+```
 
-University of Austin \
-Assistant Professor of Economics
+### Download the index
 
-<!-- TODO: add X handle, replace href="#" below -->
-[<i class="fa-solid fa-globe"></i>](https://jpmvbastos.com/ "Website")
-[<i class="fa-solid fa-envelope"></i>](mailto:joao-pedro.bastos@ttu.edu "Email")
-[<i class="fa-brands fa-x-twitter"></i>](https://x.com/jpmvbastos "X")
-[<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/jpmvbastos/ "LinkedIn")
-:::
-:::
+<!-- No dedicated Font Awesome icon exists for Stata specifically, so
+     it uses a generic file icon rather than a format-specific one. -->
+- [Excel (.xlsx)](/data/2025/output/index_2025.xlsx)
+- [CSV (.csv)](/data/2025/output/index_2025.csv)
+- [Stata (.dta)](/data/2025/output/index_2025.dta)
 
-::: {.team-row}
-![](\images\team_padilla.jpg){width=125px}
+### Missing observations
 
-::: {.team-info}
-### Alexandre Padilla
+A blank cell means no `POP`, `PIP`, `PEP`, or `POP_R` value is available for
+that country-year. A common reason is missing `POP_R` data for "independent"
+presidents not affiliated with a political party covered by V-Party.
 
-<!-- TODO: confirm whether this should be a project-specific role
-     (e.g. "Research Collaborator") rather than his general title --
-     left as general title for now, easy one-line swap. -->
-Department of Economics, Metropolitan State University of Denver \
-Professor and Chair
+- [Download missing-observations report (.xlsx)](/data/2025/output/missing_data_2025.xlsx)
 
-<!-- TODO: add X handle, replace href="#" below -->
-[<i class="fa-solid fa-globe"></i>](https://www.alexandrepadilla.com// "Website")
-[<i class="fa-solid fa-envelope"></i>](mailto:padilale@msudenver.edu "Email")
-[<i class="fa-brands fa-x-twitter"></i>](https://x.com/dr_alexpadilla "X")
-[<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/alexandre-padilla-20212831/ "LinkedIn")
-:::
-:::
+### Code and data pipeline
+
+The full index-building pipeline -- code, methodology notes, and version
+history -- is available on GitHub:
+
+[View on GitHub](https://github.com/ncachanosky/LALLPI){.btn .btn-primary role="button"}
+
