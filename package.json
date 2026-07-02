@@ -1,0 +1,8 @@
+{
+  "name": "lallpi",
+  "private": true,
+  "description": "Dependency manifest for the LALLPI site's Netlify Functions. The site itself is a Quarto/Python project with no other Node.js tooling -- this file exists solely so Netlify's function bundler can resolve @netlify/blobs, which netlify/functions/download-count.mjs imports. Netlify automatically runs npm install from this file as a pre-build step, before the custom [build] command in netlify.toml runs.",
+  "dependencies": {
+    "@netlify/blobs": "10.7.9"
+  }
+}
