@@ -70,6 +70,31 @@ a:hover {
   text-decoration: none;
 }
 
+/* ---- Search (navbar) ----
+   Quarto's built-in search widget (Algolia Autocomplete library UI)
+   defaults to dark icon/text, designed for a light navbar. Our navbar
+   is forced dark (UTEP Blue) below, which likely makes the default
+   dark search icon invisible against it -- confirmed pattern: same
+   root cause already found and fixed for both the 404 page and the
+   footer text. Multiple selectors since the exact class Quarto/this
+   Autocomplete version uses can't be verified without a real render. */
+#quarto-search,
+#quarto-search a,
+#quarto-search button,
+#quarto-search svg,
+#quarto-search input,
+#quarto-search i,
+.aa-DetachedSearchButton,
+.aa-DetachedSearchButtonPlaceholder,
+.aa-DetachedSearchButtonIcon,
+.aa-DetachedSearchButtonIcon svg,
+.navbar #quarto-search .bi,
+.navbar-nav #quarto-search {
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
 /* ---- Navbar ---- */
 
 .navbar {

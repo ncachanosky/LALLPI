@@ -192,3 +192,7 @@ generated files.
 `requirements-site.txt`, then runs `quarto render`, on every push -- see
 that file's comments for why (Quarto's official Netlify plugin can't
 execute the Python this site's live tables/charts depend on).
+
+---  
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/00ac414b-b463-4945-b2e0-61e2eb4d49d9/deploy-status)](https://app.netlify.com/projects/lallpi/deploys)
