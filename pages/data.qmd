@@ -49,9 +49,9 @@ print(f"- **Years covered:** {year_min}-{year_max}")
 
 <!-- No dedicated Font Awesome icon exists for Stata specifically, so
      it uses a generic file icon rather than a format-specific one. -->
-- [Excel (.xlsx)](/data/2025/output/index_2025.xlsx)
-- [CSV (.csv)](/data/2025/output/index_2025.csv)
-- [Stata (.dta)](/data/2025/output/index_2025.dta)
+- <a id="dl-csv" href="/data/2025/output/index_2025.csv">CSV (.csv)</a> <span class="dl-count" data-file="index_2025.csv"></span>
+- <a id="dl-xlsx" href="/data/2025/output/index_2025.xlsx">Excel (.xlsx)</a> <span class="dl-count" data-file="index_2025.xlsx"></span>
+- <a id="dl-dta" href="/data/2025/output/index_2025.dta">Stata (.dta)</a> <span class="dl-count" data-file="index_2025.dta"></span>
 
 ### Missing observations
 
@@ -59,7 +59,48 @@ A blank cell means no `POP`, `PIP`, `PEP`, or `POP_R` value is available for
 that country-year. A common reason is missing `POP_R` data for "independent"
 presidents not affiliated with a political party covered by V-Party.
 
-- [Download missing-observations report (.xlsx)](/data/2025/output/missing_data_2025.xlsx)
+- <a id="dl-missing" href="/data/2025/output/missing_data_2025.xlsx">Download missing-observations report (.xlsx)</a> <span class="dl-count" data-file="missing_data_2025.xlsx"></span>
+
+<script>
+// Live download counter (Netlify Blobs-backed, see
+// netlify/functions/download-count.js). Deliberately separate from
+// Google Analytics -- GA4 already tracks .csv/.xlsx downloads
+// automatically and this adds .dta/.bib tracking below, but GA data
+// isn't queryable live from a static page without much heavier
+// infrastructure, so this exists specifically to power the number
+// actually shown here.
+(function () {
+  var API = "/.netlify/functions/download-count";
+
+  // Populate counts on page load.
+  fetch(API)
+    .then(function (r) { return r.json(); })
+    .then(function (counts) {
+      document.querySelectorAll(".dl-count").forEach(function (el) {
+        var file = el.getAttribute("data-file");
+        var n = counts[file] || 0;
+        el.textContent = "(" + n.toLocaleString() + (n === 1 ? " download" : " downloads") + ")";
+      });
+    })
+    .catch(function () {
+      // Fail silently -- a missing count shouldn't break the download links themselves.
+    });
+
+  // Increment on click, without blocking the actual download.
+  // sendBeacon is used specifically because it's designed to survive
+  // the page navigating away immediately after the click, unlike a
+  // plain fetch() call which isn't guaranteed to complete.
+  document.querySelectorAll("a[id^='dl-']").forEach(function (link) {
+    link.addEventListener("click", function () {
+      var span = link.parentElement.querySelector(".dl-count");
+      var file = span ? span.getAttribute("data-file") : null;
+      if (!file) return;
+      var payload = new Blob([JSON.stringify({ file: file })], { type: "application/json" });
+      navigator.sendBeacon(API, payload);
+    });
+  });
+})();
+</script>
 
 ### Open source
 

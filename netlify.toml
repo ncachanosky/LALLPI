@@ -26,5 +26,8 @@
     quarto render
   """
 
+[functions]
+  directory = "netlify/functions"
+
 [build.environment]
   PYTHON_VERSION = "3.11"
