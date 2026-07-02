@@ -1,0 +1,75 @@
+name: Validate config files
+
+# Catches config-file syntax errors automatically on every push, rather
+# than needing to notice something's broken (e.g. a missing search box)
+# and manually re-clone + diagnose after the fact. This exact check
+# would have caught the _quarto.yml bug where `search: true` had
+# `location:`/`type:` indented underneath it -- a scalar value can't
+# have child keys, which is invalid YAML, but the file still LOOKED
+# fine at a glance and the mistake wasn't caught until search silently
+# stopped working.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate _quarto.yml (YAML)
+        run: |
+          python3 -c "
+          import yaml, sys
+          try:
+              with open('_quarto.yml') as f:
+                  yaml.safe_load(f)
+              print('_quarto.yml: valid')
+          except yaml.YAMLError as e:
+              print('_quarto.yml: INVALID -', e)
+              sys.exit(1)
+          "
+
+      - name: Validate _brand.yml (YAML)
+        run: |
+          python3 -c "
+          import yaml, sys
+          try:
+              with open('_brand.yml') as f:
+                  yaml.safe_load(f)
+              print('_brand.yml: valid')
+          except yaml.YAMLError as e:
+              print('_brand.yml: INVALID -', e)
+              sys.exit(1)
+          "
+
+      - name: Validate netlify.toml (TOML)
+        run: |
+          pip install toml --quiet
+          python3 -c "
+          import toml, sys
+          try:
+              with open('netlify.toml') as f:
+                  toml.load(f)
+              print('netlify.toml: valid')
+          except toml.TomlDecodeError as e:
+              print('netlify.toml: INVALID -', e)
+              sys.exit(1)
+          "
+
+      - name: Validate package.json (JSON)
+        run: |
+          python3 -c "
+          import json, sys
+          try:
+              with open('package.json') as f:
+                  json.load(f)
+              print('package.json: valid')
+          except json.JSONDecodeError as e:
+              print('package.json: INVALID -', e)
+              sys.exit(1)
+          "

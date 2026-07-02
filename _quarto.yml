@@ -33,7 +33,7 @@ website:
         href: https://github.com/ncachanosky/LALLPI
         aria-label: GitHub repository
   page-footer:
-    center: |
+    left: |
       &copy; 2025 Nicolas Cachanosky, João P. Bastos, Alexandre Padilla
     background: "#041E42"
 
