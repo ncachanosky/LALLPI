@@ -256,7 +256,7 @@ plt.show()
 ### Country and time coverage
 
 The index's first limitation is coverage: it is limited to Latin American
-countries -- approximately 25 with any data at all -- starting in 2000.
+countries -- approximately 22 with any data at all -- starting in 2000.
 This means the index begins just as the region's recent wave of
 left-leaning populist regimes was taking office, which limits any analysis
 of longer-run trends in populism.

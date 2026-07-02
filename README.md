@@ -83,3 +83,112 @@ coverage.
 
 **`vparty_overrides.csv`** -- for each country-year, which party (a V-Party party ID) was actually in government. This is a real human research task: V-Party scores every active party in a country's system each year, not just the governing one, so identifying the correct one requires external knowledge of who held the presidency. Extend it by adding rows directly, with the format `ISO3, YEAR, PARTY_GOV, PARTY_CODE, PARTY_NAME`.
 
+
+## Website (Quarto site, deployed via Netlify)
+
+The site is a Quarto website project, built from the same published data
+this README documents above -- every table and chart on the live site reads
+`data/2025/output/index_2025.csv` directly at build time rather than
+embedding hand-copied numbers, specifically to avoid the site quietly going
+stale relative to the actual pipeline output.
+
+### Structure
+
+```
+_quarto.yml          # navbar, footer, social metadata, search
+_brand.yml           # UTEP color/typography brand definition
+styles.css           # consolidated site-wide CSS
+_site_helpers.py      # shared functions used by multiple pages -- see below
+index.qmd             # homepage
+404.qmd               # custom 404 page (must live at repo root, not pages/)
+pages/
+  documentation.qmd
+  data.qmd
+  team.qmd
+  countries.qmd        # directory of all country pages
+  countries/            # one generated page per country
+    venezuela.qmd, argentina.qmd, ...
+generate_country_pages.py   # generates pages/countries/*.qmd from a template
+requirements-site.txt        # Python deps for RENDERING the site (jupyter,
+                              # pandas, matplotlib) -- distinct from
+                              # code/2025/requirements.txt, which is for
+                              # RUNNING the pipeline
+netlify.toml           # installs Quarto CLI + Python deps, then quarto render
+```
+
+### `_site_helpers.py`
+
+Central module imported by every page's Python chunks (`import sys;
+sys.path.insert(0, "."); import _site_helpers`). Holds:
+
+- `build_ranking_table_html()` -- the country ranking table used on both
+  the homepage and Documentation page (also links each country name to
+  its page).
+- `apply_chart_style()` -- shared matplotlib styling (open axes, legend
+  below the plot, UTEP colors) used by every chart on the site, so the
+  charts can't visually drift apart from each other one at a time.
+- `COUNTRY_SLUGS` -- the single source of truth for which countries have
+  a generated page and what URL slug each uses. Both the ranking table's
+  links and `generate_country_pages.py` read from this same dict, so they
+  can't fall out of sync with each other. **3 countries are deliberately
+  absent**: Cuba, Guyana, and Suriname each have some data (V-Party
+  rhetoric, or V-Dem institutional variables) but never a *complete* POP
+  score for any year, so there's no "latest year" to build a page around.
+  This is also why the site says **22 countries**, not the 25 that appear
+  somewhere in the published CSV -- 22 is the count with a complete score;
+  25 counts anyone with any data at all.
+- `country_summary()`, `build_country_trend_chart()`,
+  `build_subindex_breakdown_chart()`, `build_regional_comparison_chart()`,
+  `build_party_history_table_html()` -- the building blocks each country
+  page's chunks call.
+- `build_countries_directory_html()` -- the table on `pages/countries.qmd`.
+
+### Adding or updating country pages
+
+Country pages are **generated, not hand-written**. To add a country, add it
+to `COUNTRY_SLUGS` in `_site_helpers.py`, then run:
+
+```bash
+python3 generate_country_pages.py
+```
+
+Don't hand-edit files under `pages/countries/` directly -- they get
+overwritten the next time this script runs. If you need to change what's
+*on* every country page, edit the `TEMPLATE` string in
+`generate_country_pages.py` and re-run the generator, not the individual
+generated files.
+
+### Known Quarto quirks worth knowing before debugging from scratch
+
+- **Raw HTML from a Python chunk must use `IPython.display.HTML` +
+  `display()`, not `print()`.** `print()` inside a `#| output: asis` chunk
+  can render as literal escaped tag text instead of real HTML -- this
+  actually happened on this site and took a few rounds to track down.
+- **Only call `display()` once per chunk.** Multiple separate
+  `display(HTML(...))` calls in the same chunk only correctly render the
+  *last* one -- also discovered the hard way. If a chunk needs to output
+  several HTML pieces, concatenate them into one string and call
+  `display()` once.
+- **Use root-relative paths (`/images/...`, `/pages/...`), never relative
+  ones (`../images/...`).** A page's depth in the folder structure
+  (`pages/countries/venezuela.qmd` vs `index.qmd`) changes what a relative
+  path resolves to; a root-relative path is the same from anywhere.
+- **`quarto preview`'s local dev server and Netlify's production hosting
+  handle 404s differently.** Locally, the preview server appears to look
+  for a `404.html` scoped to the specific directory of the broken link
+  (e.g. `/pages/404.html`) rather than falling through to the root
+  `404.html`, so the custom 404 page can appear blank in local preview even
+  when it's correctly configured. Test 404 behavior against the actual
+  deployed Netlify site, not just local preview.
+- **`_extensions/` (if you install any Quarto extension) must be committed
+  to git.** It's not a build artifact Quarto regenerates -- if a page's
+  YAML references a `filters:` entry and the corresponding
+  `_extensions/<name>/` folder isn't in the repo, the entire site fails to
+  build, not just that one feature.
+
+### Deployment
+
+`netlify.toml` installs a pinned Quarto CLI version and the packages in
+`requirements-site.txt`, then runs `quarto render`, on every push -- see
+that file's comments for why (Quarto's official Netlify plugin can't
+execute the Python this site's live tables/charts depend on).
