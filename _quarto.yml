@@ -23,6 +23,8 @@ website:
         text: Countries
       - href: pages/team.qmd
         text: Team
+      - href: pages/citation.qmd
+        text: Citation
     right:
       - icon: github
         href: https://github.com/ncachanosky/LALLPI

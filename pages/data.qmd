@@ -2,10 +2,24 @@
 title: "Data"
 ---
 
+Using LALLPI in your research? See [how to cite this
+index](/pages/citation.html).
+
 ## 2025 Version
 
 - **Release date:** April, 2025
 - **Version:** v1
+
+### Citing this version (V2025.1)
+
+> Cachanosky, Nicolas, João Pedro Bastos, and Alexandre Padilla. 2026.
+> "Latin American Left-Leaning Populism Index, V2025.1." Harvard Dataverse.
+> https://doi.org/10.7910/DVN/KEJ9VF.
+
+**DOI:** [10.7910/DVN/KEJ9VF](https://doi.org/10.7910/DVN/KEJ9VF)
+
+See the [Citation page](/pages/citation.html) for BibTeX and how to cite
+the code/repository specifically.
 
 ```{python}
 #| echo: false
@@ -17,7 +31,14 @@ title: "Data"
 import pandas as pd
 
 df = pd.read_csv("data/2025/output/index_2025.csv")
-n_countries = df["ISO3"].nunique()
+
+# Countries with a complete POP score at least once, not just any data
+# at all. 3 countries (Cuba, Guyana, Suriname) appear in this file with
+# partial data (some combination of EP, IP, or POP_R) but never a
+# complete POP for any year, so they're excluded from this count --
+# matching COUNTRY_SLUGS in _site_helpers.py, which is why exactly
+# these countries get a page under /pages/countries/.
+n_countries = df[df["POP"].notna()]["ISO3"].nunique()
 year_min, year_max = df["YEAR"].min(), df["YEAR"].max()
 
 print(f"- **Countries covered:** {n_countries}")

@@ -1,0 +1,33 @@
+---
+title: "Citation"
+---
+
+If you use LALLPI in your research, please cite the dataset as published on
+Harvard Dataverse:
+
+> Cachanosky, Nicolas, João Pedro Bastos, and Alexandre Padilla. 2026.
+> "Latin American Left-Leaning Populism Index, V2025.1." Harvard Dataverse.
+> https://doi.org/10.7910/DVN/KEJ9VF.
+
+**DOI:** [10.7910/DVN/KEJ9VF](https://doi.org/10.7910/DVN/KEJ9VF)
+
+## BibTeX
+
+```bibtex
+@misc{cachanosky2026lallpi,
+  author    = {Cachanosky, Nicolas and Bastos, Jo\~{a}o Pedro and Padilla, Alexandre},
+  title     = {Latin American Left-Leaning Populism Index, V2025.1},
+  year      = {2026},
+  publisher = {Harvard Dataverse},
+  doi       = {10.7910/DVN/KEJ9VF},
+  url       = {https://doi.org/10.7910/DVN/KEJ9VF}
+}
+```
+
+[Download BibTeX file](/lallpi.bib){.btn .btn-primary role="button"}
+
+## Citing the code specifically
+
+If you're referencing the pipeline or website rather than the published
+data itself, cite the GitHub repository and release version instead:
+[github.com/ncachanosky/LALLPI](https://github.com/ncachanosky/LALLPI).
