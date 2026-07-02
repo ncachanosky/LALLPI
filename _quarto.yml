@@ -4,10 +4,12 @@ project:
 
 website:
   title: "LALLPI"
-  image: images/favicon.svg
+  image: images/favicon.svg    # For social-network sharing
   favicon: images/favicon.svg
-  twitter-card: true
-  site-url: lallpi.netlify.app
+  twitter-card: true           # Twitter card metadata
+  open-graph: true             # For social-network sharing
+  llms-txt: true               # LLM (large language model) output
+  site-url: lallpi.netlify.app # For social-network sharing
   navbar:
     left:
       - href: index.qmd
@@ -25,12 +27,8 @@ website:
         href: https://github.com/ncachanosky/LALLPI
         aria-label: GitHub repository
   page-footer:
-    left: |
+    center: |
       &copy; 2025 Nicolas Cachanosky, João P. Bastos, Alexandre Padilla
-    right:
-      - icon: github
-        href: https://github.com/ncachanosky/LALLPI
-        aria-label: GitHub repository
     background: "#041E42"
 
 format:

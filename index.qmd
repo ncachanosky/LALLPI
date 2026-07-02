@@ -46,4 +46,6 @@ FEATURED_YEAR = 2018  # matches the year discussed in the Documentation page nar
 display(HTML(_site_helpers.build_ranking_table_html("data/2025/output/index_2025.csv", FEATURED_YEAR)))
 ```
 
+<div style="text-align: center">
 [Download the data](/pages/data.qmd){.btn .btn-primary role="button"}
+</div>
