@@ -86,13 +86,25 @@ a:hover {
   color: var(--utep-orange) !important;
 }
 
-/* ---- Footer ---- */
-
+/* ---- Footer ----
+   Multiple selectors since .page-footer alone was confirmed NOT
+   matching Quarto's actual generated markup -- can't render-test
+   which one is correct without a real build. */
 .page-footer,
 .page-footer a,
 .page-footer i,
 .page-footer svg,
-.page-footer .bi {
+.page-footer .bi,
+#quarto-footer,
+#quarto-footer a,
+#quarto-footer i,
+#quarto-footer svg,
+footer.footer,
+footer.footer a,
+footer.footer i,
+.nav-footer,
+.nav-footer a,
+.nav-footer i {
   color: #FFFFFF !important;
   fill: #FFFFFF !important;
 }

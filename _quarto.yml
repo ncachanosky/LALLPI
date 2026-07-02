@@ -10,7 +10,7 @@ website:
   open-graph: true             # For social-network sharing
   llms-txt: true               # LLM (large language model) output
   site-url: lallpi.netlify.app # For social-network sharing
-  search: 
+  search:
     location: navbar
     type: overlay
   google-analytics: "G-VME9FKJ138"
