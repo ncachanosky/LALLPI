@@ -1,4 +1,13 @@
-// netlify/functions/download-count.js
+// netlify/functions/download-count.mjs
+//
+// NOTE: this must keep the .mjs extension, not .js -- it uses modern
+// ES module syntax (import / export default), and without a
+// package.json declaring "type": "module" anywhere in the project,
+// a plain .js file is treated as CommonJS by default, which makes
+// import/export a syntax error and the function fails to build
+// entirely (confirmed: this exact bug happened once already -- the
+// endpoint fell through to the site's normal 404 page since Netlify
+// never successfully registered a working function at that route).
 //
 // Live download counter for the Data page, backed by Netlify Blobs
 // (Netlify's built-in key-value store -- no external account needed,
@@ -25,6 +34,7 @@ const TRACKED_FILES = [
   "index_2025.xlsx",
   "index_2025.dta",
   "missing_data_2025.xlsx",
+  "lallpi.bib",
 ];
 
 const CORS_HEADERS = {
