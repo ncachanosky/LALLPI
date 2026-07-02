@@ -4,13 +4,16 @@ project:
 
 website:
   title: "LALLPI"
-  search: true
   image: images/favicon.svg    # For social-network sharing
   favicon: images/favicon.svg
   twitter-card: true           # Twitter card metadata
   open-graph: true             # For social-network sharing
   llms-txt: true               # LLM (large language model) output
   site-url: lallpi.netlify.app # For social-network sharing
+  search: 
+    location: navbar
+    type: overlay
+  google-analytics: "G-VME9FKJ138"
   navbar:
     left:
       - href: index.qmd
