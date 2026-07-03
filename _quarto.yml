@@ -18,16 +18,14 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: pages/documentation.qmd
-        text: Documentation
       - href: pages/data.qmd
         text: Data
+      - href: pages/documentation.qmd
+        text: Documentation
       - href: pages/countries.qmd
         text: Countries
       - href: pages/team.qmd
         text: Team
-      - href: pages/data.qmd
-        text: Data
       - href: pages/citation.qmd
         text: Citation
     right:
