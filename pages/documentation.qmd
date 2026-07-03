@@ -143,7 +143,7 @@ variables commonly observed in populist regimes.
 ## Results and selected data
 
 Index results are consistent with regimes the literature already
-identifies as populist (Celico et al., 2024; Funke et al., 2023). The table
+identifies as populist ([Celico et al., 2024](https://doi.org/10.1016/j.ejpoleco.2024.102529); [Funke et al., 2023](https://www.aeaweb.org/articles?id=10.1257/aer.20202045)). The table
 below presents index values and rankings for every country with data in
 2018. Consistent with the literature, Venezuela, Bolivia, Nicaragua, and
 Ecuador rank highest that year; Argentina ranks lower, reflecting Macri's
