@@ -31,3 +31,7 @@ Harvard Dataverse:
 If you're referencing the pipeline or website rather than the published
 data itself, cite the GitHub repository and release version instead:
 [github.com/ncachanosky/LALLPI](https://github.com/ncachanosky/LALLPI).
+
+---
+
+![](/images/favicon.svg){fig-align=center width=150px}

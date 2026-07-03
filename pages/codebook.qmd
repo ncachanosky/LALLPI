@@ -1,0 +1,35 @@
+---
+title: "Codebook"
+---
+
+Every variable in the published index, in one place. For the conceptual
+methodology (why the index is built this way), see
+[Documentation](/pages/documentation.html); this page is the quick
+reference for what a specific column actually means once you've
+downloaded the data.
+
+Range, missing-value counts, and distinct-value counts below are computed
+live from the current published dataset every time this page is built --
+not hand-typed, so they can't silently drift out of sync with the actual
+data the way a static codebook could.
+
+```{python}
+#| echo: false
+#| output: asis
+
+import sys
+sys.path.insert(0, ".")
+import pandas as pd
+import _site_helpers as sh
+from IPython.display import HTML, display
+
+df = pd.read_csv("data/2025/output/index_2025.csv")
+
+display(HTML(f"""
+<p><strong>Dataset:</strong> index_2025.csv &middot;
+<strong>Observations:</strong> {len(df)} country-years &middot;
+<strong>Variables:</strong> {len(df.columns)}</p>
+"""))
+
+display(HTML(sh.build_codebook_html(df)))
+```

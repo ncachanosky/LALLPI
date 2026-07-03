@@ -2,8 +2,8 @@
 title: "Data"
 ---
 
-Using LALLPI in your research? See [how to cite this
-index](/pages/citation.html).
+> Using LALLPI in your research? See [how to cite this index](/pages/citation.html).
+> For a variable-by-variable reference, see the [Codebook](/pages/codebook.html).
 
 ## 2025 Version
 

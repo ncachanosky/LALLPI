@@ -1,13 +1,9 @@
 ---
 title: "Documentation"
-share:
-  permalink: "https://lallpi.netlify.app/pages/documentation.html"
-  description: "LALLPI Documentation"
-  twitter: true
-  facebook: true
-  linkedin: true
-  email: true
 ---
+
+> Using LALLPI in your research? See [how to cite this index](/pages/citation.html).
+> For a variable-by-variable reference, see the [Codebook](/pages/codebook.html).
 
 ## Conceptualization
 

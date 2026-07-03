@@ -341,3 +341,132 @@ def build_countries_directory_html(df: pd.DataFrame) -> str:
 {chr(10).join(rows)}
   </tbody>
 </table>"""
+
+# ---------------------------------------------------------------------------
+# Codebook
+# ---------------------------------------------------------------------------
+#
+# Static metadata (description/source/construction/notes) can't be derived
+# from the data itself -- it's hand-curated below. Type/range/missing-count
+# ARE computed live from the actual published CSV each time this renders,
+# so this can't silently drift out of sync with the real data the way a
+# fully hand-typed codebook could.
+
+CODEBOOK_SECTIONS = [
+    ("Identifier Variables", [
+        ("ISO2", "2-letter country code", "ISO 3166-1 alpha-2", None,
+         "Used for flag icon lookups (flagcdn.com) throughout the site. Missing for Cuba specifically -- never added to countries.csv, likely because Cuba never has a complete POP value (see COUNTRY_SLUGS notes) and therefore never needed a flag lookup on a country page."),
+        ("ISO3", "3-letter country code", "ISO 3166-1 alpha-3", None,
+         "Primary country key used throughout the pipeline and site (e.g. COUNTRY_SLUGS in _site_helpers.py)."),
+        ("COUNTRY", "Country name", "countries.csv", None, None),
+        ("REGION", "Sub-region classification", "countries.csv", None,
+         "E.g. South America, Central America, Caribbean. Used for the regional-comparison charts on country pages."),
+        ("YEAR", "Calendar year", "N/A", None, "2000-2020."),
+        ("LDC", "Least Developed Country flag (UN classification)", "UN-OHRLLS", None, "0 = no, 1 = yes."),
+        ("LLDC", "Landlocked Developing Country flag (UN classification)", "UN-OHRLLS", None, "0 = no, 1 = yes."),
+        ("SIDS", "Small Island Developing State flag (UN classification)", "UN-OHRLLS", None, "0 = no, 1 = yes."),
+    ]),
+    ("Overall Index", [
+        ("POP", "Overall populism index",
+         "Constructed", "POP = (PEP + PIP) / 2",
+         "Range 0-100. Combines economic and institutional populism, each already weighted by rhetoric via PEP/PIP. See Documentation for the full derivation and the scenarios this construction is designed to distinguish."),
+        ("POP_RANK", "Country's POP rank among countries with a POP value that year", "Constructed", "Computed per-year, 1 = highest POP", None),
+        ("POP_PERCENTILE", "Country's POP percentile rank that year", "Constructed", None, "Range 0-1."),
+    ]),
+    ("Institutional Populism", [
+        ("PIP", "Institutional Populism, rhetoric-weighted", "Constructed", "PIP = POP_R \u00d7 IP",
+         "Range 0-100 (since POP_R is 0-1 and IP is 0-100)."),
+        ("PIP_RANK", "Country's PIP rank among countries with a PIP value that year", "Constructed", None, None),
+        ("PIP_PERCENTILE", "Country's PIP percentile rank that year", "Constructed", None, "Range 0-1."),
+        ("IP", "Institutional Populism sub-index", "Constructed", "IP = average(IP_1, IP_2, IP_3, IP_4, IP_5, IP_6)",
+         "Range 0-100. Note: IP_3 (legislative constraints) and IP_4 (corruption, duplicating IP_2) reflect a known construction quirk carried over from the original pipeline -- documented transparently on the Documentation page rather than silently corrected, since it affects published historical values."),
+        ("IP_1", "Rule of law", "V-Dem", None, "Range 0-100."),
+        ("IP_2", "Corruption", "V-Dem", None, "Range 0-100."),
+        ("IP_3", "Legislative constraints", "V-Dem", None, "Range 0-100."),
+        ("IP_4", "Corruption (duplicate of IP_2 -- see IP notes above)", "V-Dem", None, "Range 0-100."),
+        ("IP_5", "Neopatrimonialism", "V-Dem", None, "Range 0-100."),
+        ("IP_6", "Property rights", "Heritage IEF", None, "Range 0-100."),
+    ]),
+    ("Economic Populism", [
+        ("PEP", "Economic Populism, rhetoric-weighted", "Constructed", "PEP = POP_R \u00d7 EP",
+         "Range 0-100 (since POP_R is 0-1 and EP is 0-100)."),
+        ("PEP_RANK", "Country's PEP rank among countries with a PEP value that year", "Constructed", None, None),
+        ("PEP_PERCENTILE", "Country's PEP percentile rank that year", "Constructed", None, "Range 0-1."),
+        ("EP", "Economic Populism sub-index", "Constructed", "EP = average(EP_1, EP_2, EP_3, EP_4)",
+         "Range 0-100. Each EP_n component is itself an average of Heritage IEF and Fraser EFW variables -- see Documentation for the full variable-source table."),
+        ("EP_1", "Business and labor market regulation", "Heritage IEF + Fraser EFW", None, "Range 0-100."),
+        ("EP_2", "Government interference", "Heritage IEF + Fraser EFW", None, "Range 0-100."),
+        ("EP_3", "Monetary and financial freedom", "Heritage IEF + Fraser EFW", None, "Range 0-100."),
+        ("EP_4", "Freedom to trade (internationally)", "Heritage IEF + Fraser EFW", None, "Range 0-100."),
+    ]),
+    ("Rhetoric and Governing Party", [
+        ("POP_R", "Populist rhetoric score of the governing party that year", "V-Party", None,
+         "Range 0-1. Harmonic mean of \"anti-elitism\" and \"people-centrism\" -- see Documentation for the full definition."),
+        ("POP_R_RANK", "Country's POP_R rank among countries with a POP_R value that year", "Constructed", None, None),
+        ("POP_R_PERCENTILE", "Country's POP_R percentile rank that year", "Constructed", None, "Range 0-1."),
+        ("PARTY_CODE", "V-Party's identifier code for the governing party", "V-Party", None, None),
+        ("PARTY_NAME", "Name of the governing party that year", "V-Party", None,
+         "Party attribution for change-of-government years follows the documented override file -- see the Data page."),
+    ]),
+]
+
+
+def build_codebook_html(df: pd.DataFrame) -> str:
+    """Codebook: every published column, with live-computed type/range/
+    missing-count from the actual data alongside hand-curated
+    description/source/construction/notes (see CODEBOOK_SECTIONS).
+
+    Rendered as compact per-variable bullet blocks rather than a wide
+    table -- a table handles short categorical values fine, but forces
+    awkward text-wrapping on variable-length free text (Notes
+    especially), which balloons row height and makes the page feel
+    unwieldy rather than scannable.
+    """
+    sections_html = []
+
+    for section_title, variables in CODEBOOK_SECTIONS:
+        entries = []
+        for name, description, source, construction, notes in variables:
+            col = df[name]
+            if pd.api.types.is_numeric_dtype(col):
+                non_null = col.dropna()
+                if len(non_null) > 0:
+                    # Format without decimals if every non-null value is a
+                    # whole number (covers YEAR, LDC/LLDC/SIDS, and the
+                    # *_RANK columns, all of which are conceptually
+                    # integers but stored as float64 since NaN forces
+                    # pandas to use a float dtype).
+                    if (non_null == non_null.round()).all():
+                        range_str = f"{non_null.min():.0f} to {non_null.max():.0f}"
+                    else:
+                        range_str = f"{non_null.min():.2f} to {non_null.max():.2f}"
+                else:
+                    range_str = "--"
+            else:
+                n_unique = col.nunique()
+                range_str = f"{n_unique} distinct values"
+
+            n_missing = int(col.isna().sum())
+            pct_missing = 100 * n_missing / len(df)
+
+            # Skip empty fields rather than showing a bare "--" bullet --
+            # not every variable has a construction formula or notes.
+            bullets = [f"<li><strong>{description}</strong> &middot; {source}</li>"]
+            if construction:
+                bullets.append(f"<li>Construction: <code>{construction}</code></li>")
+            bullets.append(f"<li>Range/values: {range_str} &middot; Missing: {n_missing} ({pct_missing:.1f}%)</li>")
+            if notes:
+                bullets.append(f"<li>{notes}</li>")
+
+            entries.append(f"""<div class="codebook-entry">
+  <h4><code>{name}</code></h4>
+  <ul>
+    {chr(10).join(bullets)}
+  </ul>
+</div>""")
+
+        sections_html.append(f"""
+<h3>{section_title}</h3>
+{chr(10).join(entries)}""")
+
+    return "\n".join(sections_html)

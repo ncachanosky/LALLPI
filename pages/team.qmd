@@ -2,6 +2,7 @@
 title: "Team"
 ---
 
+<!-- TEAM MEMBER 1: CACHANOSKY -->
 ::: {.team-row}
 ![](/images/team_cachanosky.jpg){width=125px}
 
@@ -12,7 +13,6 @@ The University of Texas at El Paso \
 Center for Free Enterprise \
 Director
 
-<!-- TODO: add X handle, replace href="#" below -->
 [<i class="fa-solid fa-globe"></i>](https://www.ncachanosky.com/ "Website")
 [<i class="fa-solid fa-envelope"></i>](mailto:ncachanosky@utep.edu "Email")
 [<i class="fa-brands fa-x-twitter"></i>](https://x.com/n_cachanosky "X")
@@ -20,6 +20,7 @@ Director
 :::
 :::
 
+<!-- TEAM MEMBER 1: CACHANOSKY -->
 ::: {.team-row}
 ![](/images/team_bastos.jpg){width=125px}
 
@@ -29,7 +30,6 @@ Director
 University of Austin \
 Assistant Professor of Economics
 
-<!-- TODO: add X handle, replace href="#" below -->
 [<i class="fa-solid fa-globe"></i>](https://jpmvbastos.com/ "Website")
 [<i class="fa-solid fa-envelope"></i>](mailto:jbastos@uaustin.org "Email")
 [<i class="fa-brands fa-x-twitter"></i>](https://x.com/jpmvbastos "X")
@@ -37,6 +37,7 @@ Assistant Professor of Economics
 :::
 :::
 
+<!-- TEAM MEMBER 1: CACHANOSKY -->
 ::: {.team-row}
 ![](/images/team_padilla.jpg){width=125px}
 
@@ -47,7 +48,6 @@ Metropolitan State University of Denver \
 Department of Economics \
 Chair and Professor
 
-<!-- TODO: add X handle, replace href="#" below -->
 [<i class="fa-solid fa-globe"></i>](https://www.alexandrepadilla.com// "Website")
 [<i class="fa-solid fa-envelope"></i>](mailto:padilale@msudenver.edu "Email")
 [<i class="fa-brands fa-x-twitter"></i>](https://x.com/dr_alexpadilla "X")
@@ -57,5 +57,5 @@ Chair and Professor
 
 <div>
 <br>
-![](/images/favicon.svg){fig-align=center width=150px}
 </div>
+![](/images/favicon.svg){fig-align=center width=150px}

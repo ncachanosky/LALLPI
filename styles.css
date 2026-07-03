@@ -14,7 +14,7 @@
 :root {
   --utep-orange: #FF8200;
   --utep-blue: #041E42;
-  --utep-silver: #040505;
+  --utep-silver: #B1B3B3;
 }
 
 /* ---- Typography ---- */
@@ -109,6 +109,28 @@ a:hover {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: var(--utep-orange) !important;
+}
+
+/* ---- Codebook entries ---- */
+
+.codebook-entry {
+  border-left: 3px solid var(--utep-orange);
+  padding-left: 16px;
+  margin: 1.2em 0;
+}
+
+.codebook-entry h4 {
+  margin-bottom: 0.3em;
+  color: var(--utep-blue);
+}
+
+.codebook-entry ul {
+  margin-top: 0;
+  padding-left: 1.2em;
+}
+
+.codebook-entry li {
+  margin-bottom: 0.2em;
 }
 
 /* ---- Footer ----
