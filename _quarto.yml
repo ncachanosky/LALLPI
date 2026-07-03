@@ -19,11 +19,13 @@ website:
       - href: index.qmd
         text: Home
       - href: pages/data.qmd
-        text: Data
-      - href: pages/documentation.qmd
-        text: Documentation
+        text: Data      
       - href: pages/countries.qmd
-        text: Countries
+        text: Countries      
+      - href: pages/documentation.qmd
+        text: Documentation      
+      - href: pages/codebook.qmd
+        text: Codebook            
       - href: pages/team.qmd
         text: Team
       - href: pages/citation.qmd
