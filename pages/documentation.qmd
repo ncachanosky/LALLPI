@@ -2,7 +2,7 @@
 title: "Documentation"
 ---
 
-> Using LALLPI in your research? See [how to cite this index](/pages/citation.html).
+> Using LALLPI in your research? See [how to cite this index](/pages/citation.html).  
 > For a variable-by-variable reference, see the [Codebook](/pages/codebook.html).
 
 ## Conceptualization
